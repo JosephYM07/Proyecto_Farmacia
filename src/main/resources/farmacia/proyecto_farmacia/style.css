@@ -14,3 +14,33 @@
     -fx-background-color: transparent;
     -fx-border-color: transparent;
 }
+.panel_bordes {
+    -fx-background-color: rgba(61, 61, 61, 0.2) transparent; /* Color #3D3D3D con 50% de transparencia */
+    -fx-background-radius: 15px; /* Establece el radio de los bordes */
+    -fx-border-width: 2px; /* Ancho del borde, ajusta según tus necesidades */
+}
+.Usuario {
+    -fx-background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de transparencia */
+    -fx-text-fill: white; /* Color del texto en blanco */
+}
+.contrasenia_admin{
+    -fx-background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de transparencia */
+}
+.borde_panel_log_adm{
+    -fx-background-color: rgba(61, 61, 61, 0.2) transparent; /* Color #3D3D3D con 50% de transparencia */
+    -fx-background-radius: 15px; /* Establece el radio de los bordes */
+    -fx-border-width: 2px; /* Ancho del borde, ajusta según tus necesidades */
+}
+.boton_login_admin {
+    -fx-background-color: transparent; /* Fondo completamente transparente */
+    -fx-border-color: transparent; /* Borde completamente transparente */
+    -fx-text-fill: white; /* Color del texto en blanco */
+}
+
+.boton_login_admin:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.2); /* Resaltar con transparencia al pasar el cursor */
+}
+
+.boton_login_admin:pressed {
+    -fx-background-color: rgba(0, 0, 0, 0.4); /* Resaltar con más transparencia al hacer clic */
+}

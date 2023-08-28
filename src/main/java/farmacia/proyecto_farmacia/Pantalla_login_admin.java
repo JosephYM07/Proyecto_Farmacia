@@ -34,6 +34,7 @@ public class Pantalla_login_admin {
     public void handleClicks(ActionEvent actionEvent) {
         // Aquí maneja los clics de los botones
         if (actionEvent.getSource() == btnOverview) {
+
             // Código para el botón Overview
         } else if (actionEvent.getSource() == btnCustomers) {
             // Código para el botón Customers
