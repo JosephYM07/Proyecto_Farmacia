@@ -1,0 +1,31 @@
+.button
+{
+    -fx-background-color : #05071F;
+    -fx-text-fill : #e7e5e5;
+}
+.button:hover{
+    -fx-background-color : #10165F;
+}
+.button:pressed
+{
+    -fx-background-color : #1620A1;
+}
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.panel_bordes {
+    -fx-background-color: rgba(61, 61, 61, 0.2) transparent; /* Color #3D3D3D con 50% de transparencia */
+    -fx-background-radius: 15px; /* Establece el radio de los bordes */
+    -fx-border-width: 2px; /* Ancho del borde, ajusta según tus necesidades */
+}
+.borde_panel_log_adm{
+    -fx-background-color: rgba(61, 61, 61, 0.2) transparent; /* Color #3D3D3D con 50% de transparencia */
+    -fx-background-radius: 15px; /* Establece el radio de los bordes */
+    -fx-border-width: 2px; /* Ancho del borde, ajusta según tus necesidades */
+}
+.p1{
+    -fx-background-color: rgba(61, 61, 61, 0.2) transparent; /* Color #3D3D3D con 50% de transparencia */
+    -fx-background-radius: 15px; /* Establece el radio de los bordes */
+    -fx-border-width: 2px; /* Ancho del borde, ajusta según tus necesidades */
+}

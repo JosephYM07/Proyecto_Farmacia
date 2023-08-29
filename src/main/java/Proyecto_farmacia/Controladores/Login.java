@@ -1,4 +1,4 @@
-package farmacia.proyecto_farmacia;
+package Proyecto_farmacia.Controladores;
 
 import javafx.application.Application;
 

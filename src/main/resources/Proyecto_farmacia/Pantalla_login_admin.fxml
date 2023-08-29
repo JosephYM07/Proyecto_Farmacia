@@ -15,7 +15,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="farmacia.proyecto_farmacia.Pantalla_login_admin">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto_farmacia.Controladores.Pantalla_login_admin">
     <children>
         <VBox alignment="TOP_CENTER" layoutY="161.0" prefHeight="415.0" prefWidth="256.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
@@ -28,7 +28,7 @@
                   </ImageView>
                </children>
             </Pane>
-                <Button fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Home" textFill="#e7e5e5">
+                <Button fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Home" textFill="#e7e5e5">
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -46,7 +46,7 @@
                         <Insets left="50.0" />
                     </padding>
                 </Button>
-                <Button fx:id="btnCustomers" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Cajeros">
+                <Button fx:id="btnCustomers" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Cajeros">
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -58,7 +58,7 @@
                         <Insets left="50.0" />
                     </padding>
                 </Button>
-                <Button fx:id="btnCustomers1" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Administradores">
+                <Button fx:id="btnCustomers1" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Administradores">
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -70,7 +70,7 @@
                         <Insets left="50.0" />
                     </padding>
                 </Button>
-                <Button fx:id="btnSettings" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Configuración">
+                <Button fx:id="btnSettings" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Configuración">
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -82,7 +82,7 @@
                         <Insets left="50.0" />
                     </padding>
                 </Button>
-                <Button fx:id="btnSignout" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Salir">
+                <Button fx:id="btnSignout" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Salir">
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -111,7 +111,7 @@
                               <Circle fx:id="BotonMinimizar" fill="#42cf9b" layoutX="143.0" layoutY="21.0" radius="9.0" stroke="#42cf9b" strokeType="INSIDE" />
                           </children>
                       </Pane>
-                  <Pane layoutX="202.0" layoutY="77.0" prefHeight="426.0" prefWidth="372.0" styleClass="panel_bordes" stylesheets="@style.css">
+                  <Pane layoutX="202.0" layoutY="77.0" prefHeight="426.0" prefWidth="372.0" styleClass="panel_bordes" stylesheets="@Styles/style.css">
                      <children>
                             <ImageView fitHeight="73.0" fitWidth="67.0" layoutX="148.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
                                 <image>
@@ -124,16 +124,16 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="39.0" layoutY="163.0" prefHeight="31.0" prefWidth="287.0" styleClass="Usuario" stylesheets="@style.css" />
+                        <TextField layoutX="39.0" layoutY="163.0" prefHeight="31.0" prefWidth="287.0" styleClass="Usuario" stylesheets="@Styles/style.css" />
                         <Label layoutX="34.0" layoutY="230.0" prefHeight="31.0" prefWidth="113.0" text="Contraseña" textFill="#e7e5e5">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <PasswordField layoutX="36.0" layoutY="279.0" prefHeight="31.0" prefWidth="290.0" styleClass="contrasenia_admin" stylesheets="@style.css" />
-                        <Pane layoutX="62.0" layoutY="337.0" prefHeight="50.0" prefWidth="240.0" styleClass="borde_panel_log_adm" stylesheets="@style.css">
+                        <PasswordField layoutX="36.0" layoutY="279.0" prefHeight="31.0" prefWidth="290.0" styleClass="contrasenia_admin" stylesheets="@Styles/style.css" />
+                        <Pane layoutX="62.0" layoutY="337.0" prefHeight="50.0" prefWidth="240.0" styleClass="borde_panel_log_adm" stylesheets="@Styles/style.css">
                            <children>
-                              <Button layoutX="69.0" layoutY="11.0" mnemonicParsing="false" styleClass="boton_login_admin" stylesheets="@style.css" text="Iniciar Sesión" />
+                              <Button layoutX="69.0" layoutY="11.0" mnemonicParsing="false" styleClass="boton_login_admin" stylesheets="@Styles/style.css" text="Iniciar Sesión" />
                            </children>
                         </Pane>
                      </children>

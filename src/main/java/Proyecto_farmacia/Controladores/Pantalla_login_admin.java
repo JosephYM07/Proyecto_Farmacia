@@ -1,19 +1,10 @@
-package farmacia.proyecto_farmacia;
+package Proyecto_farmacia.Controladores;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.VBox;
 
 public class Pantalla_login_admin {
-    @FXML
-    private VBox pnItems;
-    @FXML
-    private ImageView imageView;
-    @FXML
-    private Label label;
 
     @FXML
     private Button btnOverview;

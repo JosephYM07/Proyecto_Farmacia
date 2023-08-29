@@ -4,6 +4,8 @@ module farmacia.proyecto_farmacia {
     requires java.security.jgss;
 
 
-    opens farmacia.proyecto_farmacia to javafx.fxml;
-    exports farmacia.proyecto_farmacia;
+    opens Proyecto_farmacia to javafx.fxml;
+    exports Proyecto_farmacia;
+    exports Proyecto_farmacia.Controladores;
+    opens Proyecto_farmacia.Controladores to javafx.fxml;
 }
