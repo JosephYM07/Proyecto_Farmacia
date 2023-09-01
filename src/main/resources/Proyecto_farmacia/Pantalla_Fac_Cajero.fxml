@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto_farmacia.Controladores.ControladorFactCajero">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="177.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane prefHeight="200.0" prefWidth="200.0" />
+                <Button fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Overview" textFill="#e7e5e5">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/icons8_Home_32px.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Pane fx:id="pnlOverview" prefHeight="576.0" prefWidth="814.0" />
+            </children>
+        </VBox>
+        <StackPane layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
+            <children>
+                <Pane fx:id="pnlCustomer" prefHeight="200.0" prefWidth="200.0" />
+                <Pane fx:id="pnlOrders" prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Pane fx:id="pnlMenus" layoutX="352.0" layoutY="14.0" prefHeight="549.0" prefWidth="427.0">
+                            <children>
+                                <Label fx:id="FACTURA" layoutX="14.0" layoutY="4.0" prefHeight="21.0" prefWidth="277.0" text="FACTURA" textFill="#f2efef" />
+                                <Label fx:id="Nombre" layoutX="11.0" layoutY="85.0" prefHeight="21.0" prefWidth="88.0" text="Nombre:" textFill="WHITE" />
+                                <Label fx:id="CI_RUC" layoutX="10.0" layoutY="42.0" prefHeight="21.0" prefWidth="74.0" text="CI/RUC:" textFill="WHITE" />
+                                <Label fx:id="Fecha" layoutX="13.0" layoutY="127.0" prefHeight="21.0" prefWidth="62.0" text="Fecha:" textFill="WHITE" />
+                                <TextField fx:id="Ingreso_ci" layoutX="84.0" layoutY="37.0" />
+                                <TextField fx:id="Ingreso_nombre_cliente" layoutX="84.0" layoutY="80.0" />
+                                <TextField fx:id="Ingreso_fecha_factura" layoutX="84.0" layoutY="122.0" promptText="00/00/00" />
+                                <Label fx:id="Detalle_factura" layoutX="13.0" layoutY="303.0" text="DETALLE FACTURA" textFill="WHITE" />
+                                <Label fx:id="Subtotal" layoutX="11.0" layoutY="175.0" prefHeight="21.0" prefWidth="67.0" text="Subtotal:" textFill="#f5f4f4" />
+                                <TextField fx:id="Ingreso_subtotal_factura" layoutX="84.0" layoutY="170.0" />
+                                <TextField fx:id="Ingreso_iva_factura" layoutX="84.0" layoutY="214.0" />
+                                <TextField fx:id="Ingreso_total_factura" layoutX="84.0" layoutY="259.0" />
+                                <Label fx:id="IVA" layoutX="14.0" layoutY="219.0" prefHeight="21.0" prefWidth="62.0" text="IVA:" textFill="WHITE" />
+                                <Label fx:id="Total" layoutX="10.0" layoutY="264.0" prefHeight="21.0" prefWidth="62.0" text="Total:" textFill="WHITE" />
+                                <TableView fx:id="Tabla_detalle_factura" layoutX="8.0" layoutY="324.0" prefHeight="168.0" prefWidth="401.0">
+                                    <columns>
+                                        <TableColumn fx:id="Col_ide_detalle" prefWidth="53.0" text="IDE" />
+                                        <TableColumn fx:id="Col_descripcion_detalle" prefWidth="90.0" text="Descripcion" />
+                                        <TableColumn fx:id="Col_cantidad_detalle" prefWidth="71.0" text="Cantidad" />
+                                        <TableColumn fx:id="Col_precio_detalle" prefWidth="59.0" text="Precio" />
+                                        <TableColumn fx:id="Col_total_detalle" prefWidth="66.0" text="Total" />
+                                        <TableColumn fx:id="Col_iva_detalle" prefWidth="63.0" text="IVA" />
+                                    </columns>
+                                </TableView>
+                                <Button fx:id="boton_imprimir_factura" layoutX="15.0" layoutY="504.0" mnemonicParsing="false" text="Imprimir factura" />
+                                <Button fx:id="boton_nueva_factura" layoutX="227.0" layoutY="501.0" mnemonicParsing="false" text="Nueva factura" />
+                                <Label layoutX="303.0" layoutY="37.0" prefHeight="21.0" prefWidth="95.0" text="Cajero:" textFill="WHITE" />
+                                <TextField fx:id="Ingreso_cajero" layoutX="299.0" layoutY="70.0" prefHeight="50.0" prefWidth="103.0" />
+                            </children>
+                        </Pane>
+                        <Pane fx:id="pnlMenus1" layoutY="14.0" prefHeight="549.0" prefWidth="352.0">
+                            <children>
+                                <Label fx:id="SELECCION_PRODUCTOS" layoutX="14.0" layoutY="4.0" prefHeight="21.0" prefWidth="277.0" text="SELECCION DE PRODUCTOS" textFill="#f2efef" />
+                                <Label fx:id="Producto" layoutX="14.0" layoutY="38.0" prefHeight="21.0" prefWidth="88.0" text="Producto:" textFill="#f8f8f8" />
+                                <TextField fx:id="Ingreso_producto" layoutX="14.0" layoutY="68.0" />
+                                <Button fx:id="boton_buscar_Producto" layoutX="241.0" layoutY="68.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="88.0" text="Buscar" />
+                                <Label fx:id="Cantidad" layoutX="14.0" layoutY="114.0" text="Cantidad:" textFill="WHITE" />
+                                <TextField fx:id="Ingreso_cantidad" layoutX="12.0" layoutY="139.0" prefHeight="31.0" prefWidth="186.0" />
+                                <TableView fx:id="Tabla_registro_productos" layoutX="12.0" layoutY="210.0" prefHeight="265.0" prefWidth="325.0">
+                                    <columns>
+                                        <TableColumn fx:id="Col_ide_registro" prefWidth="54.0" text="ID" />
+                                        <TableColumn fx:id="Col_descripcion_registro" prefWidth="125.0" text="Descripcion" />
+                                        <TableColumn fx:id="Col_stock_registro" prefWidth="78.0" text="STOCK" />
+                                        <TableColumn fx:id="Col_precio_registro" prefWidth="64.0" text="PRECIO" />
+                                    </columns>
+                                </TableView>
+                                <Label layoutX="14.0" layoutY="183.0" text="REGISTRO" textFill="#f8f8f8" />
+                                <Button fx:id="boton_seleccionar_Porductos" layoutX="15.0" layoutY="490.0" mnemonicParsing="false" text="Seleccionar" />
+                            </children>
+                        </Pane>
+                    </children></Pane>
+            </children>
+        </StackPane>
+    </children>
+    <effect>
+        <DropShadow color="#1b1eeb" />
+    </effect>
+</AnchorPane>
