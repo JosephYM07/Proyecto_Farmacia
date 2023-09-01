@@ -60,48 +60,21 @@ package Proyecto_farmacia.Controladores;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
-public class Login_Cajoler {
+import java.io.IOException;
 
+public class ControladorCajero extends ControladorPanel {
     @FXML
-    private Button btnOverview;
-
-    @FXML
-    private Button btnCustomers;
-
-    @FXML
-    private Button btnCustomers1;
-
-    @FXML
-    private Button btnSettings;
-
-    @FXML
-    private Button btnSignout;
-
-    public Login_Cajoler(Button btnOverview, Button btnCustomers, Button btnCustomers1, Button btnSettings, Button btnSignout) {
-        this.btnOverview = btnOverview;
-        this.btnCustomers = btnCustomers;
-        this.btnCustomers1 = btnCustomers1;
-        this.btnSettings = btnSettings;
-        this.btnSignout = btnSignout;
+    private void Pantalla_Cajero() throws IOException {
+        // Aquí puedes agregar el código específico de Pantalla_Admin
     }
 
-    @FXML
-    public void handleClicks(ActionEvent actionEvent) {
-        // Aquí maneja los clics de los botones
-        if (actionEvent.getSource() == btnOverview) {
-
-            // Código para el botón Overview
-        } else if (actionEvent.getSource() == btnCustomers) {
-            // Código para el botón Customers
-        } else if (actionEvent.getSource() == btnCustomers1) {
-            // Código para el botón Customers1
-        } else if (actionEvent.getSource() == btnSettings) {
-            // Código para el botón Settings
-        } else if (actionEvent.getSource() == btnSignout) {
-            // Código para el botón Signout
-        }
-    }
 }
 

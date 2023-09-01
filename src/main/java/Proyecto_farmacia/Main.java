@@ -10,7 +10,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Login_Cajero.fxml")); //Este sirve para cargar el archivo fxml
+        Parent root = FXMLLoader.load(getClass().getResource("Pantalla_login_admin.fxml")); //Este sirve para cargar el archivo fxml
         primaryStage.setScene(new Scene(root));// esto sirve para que se muestre la pantalla
         primaryStage.initStyle(StageStyle.UNDECORATED); //Este sirve para quitar los botones de cerrar, minimizar y maximizar
 
