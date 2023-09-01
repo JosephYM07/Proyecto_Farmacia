@@ -1,36 +1,42 @@
-.button
-{
--fx-background-color : #05071F;
--fx-text-fill : #e7e5e5;
+.button {
+    -fx-background-color: #05071F;
+    -fx-text-fill: #e7e5e5;
 }
-.button:hover{
--fx-background-color : #10165F;
+
+.button:hover {
+    -fx-background-color: #10165F;
 }
-.button:pressed
-{
--fx-background-color : #1620A1;
+
+.button:pressed {
+    -fx-background-color: #1620A1;
 }
+
 .increment-button, .decrement-button {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
 }
+
 .panel_bordes {
     -fx-background-color: rgba(61, 61, 61, 0.2) transparent; /* Color #3D3D3D con 50% de transparencia */
     -fx-background-radius: 15px; /* Establece el radio de los bordes */
     -fx-border-width: 2px; /* Ancho del borde, ajusta según tus necesidades */
 }
+
 .Usuario {
     -fx-background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de transparencia */
     -fx-text-fill: white; /* Color del texto en blanco */
 }
-.contrasenia_admin{
+
+.contrasenia_admin {
     -fx-background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de transparencia */
 }
-.borde_panel_log_adm{
+
+.borde_panel_log_adm {
     -fx-background-color: rgba(61, 61, 61, 0.2) transparent; /* Color #3D3D3D con 50% de transparencia */
     -fx-background-radius: 15px; /* Establece el radio de los bordes */
     -fx-border-width: 2px; /* Ancho del borde, ajusta según tus necesidades */
 }
+
 .boton_login_admin {
     -fx-background-color: transparent; /* Fondo completamente transparente */
     -fx-border-color: transparent; /* Borde completamente transparente */
@@ -43,4 +49,30 @@
 
 .boton_login_admin:pressed {
     -fx-background-color: rgba(0, 0, 0, 0.4); /* Resaltar con más transparencia al hacer clic */
+}
+
+.circle-button {
+    -fx-background-color: #fa4875 transparent;
+    -fx-background-radius: 50%;
+    -fx-min-width: 18px;
+    -fx-min-height: 18px;
+    -fx-max-width: 18px;
+    -fx-max-height: 18px;
+}
+
+.circle-button:hover {
+    -fx-background-color: #fa4771;
+}
+
+.circle-button2 {
+    -fx-background-color: #42cf9b transparent;
+    -fx-background-radius: 50%;
+    -fx-min-width: 18px;
+    -fx-min-height: 18px;
+    -fx-max-width: 18px;
+    -fx-max-height: 18px;
+}
+
+.circle-button2:hover {
+    -fx-background-color: #42cf9b;
 }
