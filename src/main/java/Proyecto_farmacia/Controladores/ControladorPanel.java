@@ -21,6 +21,11 @@ public class ControladorPanel {
     private Button BotonAdmin;
     @FXML
     private Button BotonSalir;
+    @FXML
+    private Button BotonMinimizarApp;
+
+    @FXML
+    private Button BotonCerrarApp;
 
     @FXML
     private void HClicks() {
@@ -42,6 +47,14 @@ public class ControladorPanel {
         BotonSalir.setOnAction(event -> {
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.close();
+        });
+        BotonCerrarApp.setOnAction(event -> {
+            Stage stage = (Stage) BotonCerrarApp.getScene().getWindow();
+            stage.close();
+        });
+        BotonMinimizarApp.setOnAction(event -> {
+            Stage stage = (Stage) BotonMinimizarApp.getScene().getWindow();
+            stage.setIconified(true);
         });
     }
 
@@ -97,4 +110,5 @@ public class ControladorPanel {
         stage.show();
 
     }
+
 }
