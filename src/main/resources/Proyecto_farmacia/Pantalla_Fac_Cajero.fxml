@@ -51,7 +51,7 @@
                                 <Label fx:id="Nombre" layoutX="11.0" layoutY="85.0" prefHeight="21.0" prefWidth="88.0" text="Nombre:" textFill="WHITE" />
                                 <Label fx:id="CI_RUC" layoutX="10.0" layoutY="42.0" prefHeight="21.0" prefWidth="74.0" text="CI/RUC:" textFill="WHITE" />
                                 <Label fx:id="Fecha" layoutX="13.0" layoutY="127.0" prefHeight="21.0" prefWidth="62.0" text="Fecha:" textFill="WHITE" />
-                                <TextField fx:id="Ingreso_ci" layoutX="84.0" layoutY="37.0" />
+                                <TextField fx:id="Ingreso_ci" layoutX="84.0" layoutY="37.0" prefHeight="25.0" prefWidth="149.0" />
                                 <TextField fx:id="Ingreso_nombre_cliente" layoutX="84.0" layoutY="80.0" />
                                 <TextField fx:id="Ingreso_fecha_factura" layoutX="84.0" layoutY="122.0" promptText="00/00/00" />
                                 <Label fx:id="Detalle_factura" layoutX="13.0" layoutY="303.0" text="DETALLE FACTURA" textFill="WHITE" />
