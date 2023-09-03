@@ -1,5 +1,6 @@
 package Proyecto_farmacia.Controladores;
 
+import Proyecto_farmacia.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -11,7 +12,7 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-public class ControladorPanel {
+public class ControladorPanel extends Main {
     private double x, y;
     @FXML
     private Button BotonHome;
