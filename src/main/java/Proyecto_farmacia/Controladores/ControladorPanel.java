@@ -67,7 +67,7 @@ public class ControladorPanel extends Main {
     private void Pantalla_Cajeros() throws IOException {
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_login_cajero.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Controlador/Pantalla_login_cajero.fxml"));
             Parent root = loader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
@@ -91,7 +91,7 @@ public class ControladorPanel extends Main {
     }
 
     private void Pantalla_Admin() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_login_admin.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Controlador/Pantalla_login_admin.fxml"));
         Parent root = loader.load();
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
