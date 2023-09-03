@@ -1,6 +1,5 @@
 package Proyecto_farmacia.Controladores;
 
-import Proyecto_farmacia.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -12,7 +11,7 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-public class ControladorPanel extends Main {
+public class ControladorPanel {
     private double x, y;
     @FXML
     private Button BotonHome;
@@ -22,6 +21,11 @@ public class ControladorPanel extends Main {
     private Button BotonAdmin;
     @FXML
     private Button BotonSalir;
+    @FXML
+    private Button BotonMinimizarApp;
+
+    @FXML
+    private Button BotonCerrarApp;
 
     @FXML
     private void HClicks() {
@@ -44,6 +48,14 @@ public class ControladorPanel extends Main {
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.close();
         });
+        BotonCerrarApp.setOnAction(event -> {
+            Stage stage = (Stage) BotonCerrarApp.getScene().getWindow();
+            stage.close();
+        });
+        BotonMinimizarApp.setOnAction(event -> {
+            Stage stage = (Stage) BotonMinimizarApp.getScene().getWindow();
+            stage.setIconified(true);
+        });
     }
 
     //Este sirve para mostrar la ventana
@@ -54,7 +66,7 @@ public class ControladorPanel extends Main {
     private void Pantalla_Cajeros() throws IOException {
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Controlador/Pantalla_login_cajero.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_login_cajero.fxml"));
             Parent root = loader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
@@ -78,7 +90,7 @@ public class ControladorPanel extends Main {
     }
 
     private void Pantalla_Admin() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Controlador/Pantalla_login_admin.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_login_admin.fxml"));
         Parent root = loader.load();
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
@@ -98,4 +110,5 @@ public class ControladorPanel extends Main {
         stage.show();
 
     }
+
 }
