@@ -69,8 +69,8 @@
                         </Label>
                         <Pane layoutX="586.0" prefHeight="42.0" prefWidth="200.0">
                             <children>
-                                <Button fx:id="BotonCerrarApp" layoutX="162.0" layoutY="13.0" mnemonicParsing="false" onAction="#HClicks" styleClass="circle-button" stylesheets="@Styles/style.css" textFill="#fa4878" />
-                                <Button fx:id="BotonMinimizarApp" layoutX="130.0" layoutY="13.0" mnemonicParsing="false" onAction="#HClicks" styleClass="circle-button2" stylesheets="@Styles/style.css" />
+                                <Circle fx:id="BotonCerrar" fill="#fa4875" layoutX="177.0" layoutY="21.0" radius="9.0" stroke="#fa4771" strokeType="INSIDE" />
+                                <Circle fx:id="BotonMinimizar" fill="#42cf9b" layoutX="143.0" layoutY="21.0" radius="9.0" stroke="#42cf9b" strokeType="INSIDE" />
                             </children>
                         </Pane>
                         <Pane layoutX="204.0" layoutY="75.0" prefHeight="426.0" prefWidth="372.0" styleClass="panel_bordes" stylesheets="@Styles/style.css">
