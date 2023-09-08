@@ -83,8 +83,8 @@
         </VBox>
         <Pane layoutX="476.0" layoutY="7.0" prefHeight="42.0" prefWidth="200.0">
             <children>
-                <Button fx:id="BotonCerrarApp" layoutX="162.0" layoutY="13.0" mnemonicParsing="false" onAction="#HClicks" styleClass="circle-button" stylesheets="@Styles/style.css" textFill="#fa4878" />
-                <Button fx:id="BotonMinimizarApp" layoutX="130.0" layoutY="13.0" mnemonicParsing="false" onAction="#HClicks" styleClass="circle-button2" stylesheets="@Styles/style.css" />
+                <Button fx:id="BotonCerrarApp" layoutX="162.0" layoutY="13.0" mnemonicParsing="false"  styleClass="circle-button" stylesheets="@Styles/style.css" textFill="#fa4878" />
+                <Button fx:id="BotonMinimizarApp" layoutX="130.0" layoutY="13.0" mnemonicParsing="false"  styleClass="circle-button2" stylesheets="@Styles/style.css" />
             </children>
         </Pane>
       <Pane layoutX="257.0" layoutY="60.0" prefHeight="484.0" prefWidth="395.0" styleClass="panel_bordes" stylesheets="@Styles/style_info_admin.css">

@@ -2,6 +2,7 @@ module farmacia.proyecto_farmacia {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.security.jgss;
+    requires java.sql;
 
 
     opens Proyecto_farmacia to javafx.fxml;

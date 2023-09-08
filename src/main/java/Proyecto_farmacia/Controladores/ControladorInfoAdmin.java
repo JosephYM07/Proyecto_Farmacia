@@ -1,5 +1,8 @@
 package Proyecto_farmacia.Controladores;
+import javafx.fxml.FXML;
 
-public class ControladorInfoAdmin extends ControladorPanel {
+import java.io.IOException;
+
+public class ControladorInfoAdmin {
 
 }
