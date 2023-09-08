@@ -1,5 +1,5 @@
 package Proyecto_farmacia.Controladores;
 
-public class ControladorInfoAdmin {
+public class ControladorInfoAdmin extends ControladorPanel {
 
 }

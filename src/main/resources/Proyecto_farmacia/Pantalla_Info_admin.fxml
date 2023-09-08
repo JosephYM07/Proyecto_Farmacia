@@ -19,7 +19,7 @@
                   </ImageView>
                </children>
                 </Pane>
-                <Button fx:id="BotonInicio" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Home" textFill="#e7e5e5">
+                <Button fx:id="BotonInicio" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Inicio" textFill="#e7e5e5">
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -52,7 +52,7 @@
                   <Insets left="50.0" />
                </padding>
             </Button>
-            <Button fx:id="BotonRevisionFacturas" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Historial de Facturas" textFill="#e7e5e5">
+            <Button fx:id="BotonRevisionFacturas" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Home" textFill="#e7e5e5">
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -95,10 +95,10 @@
                         </image>
                     </ImageView>
                     <Label layoutX="163.0" layoutY="84.0" text="Administrador" textFill="#e7e5e5" />
-            <Pane layoutX="75.0" layoutY="169.0" prefHeight="73.0" prefWidth="251.0" styleClass="p1" stylesheets="@Styles/style_info_admin.css" />
-            <Pane layoutX="75.0" layoutY="285.0" prefHeight="73.0" prefWidth="251.0" styleClass="p1" stylesheets="@Styles/style_info_admin.css" />
+            <Pane layoutX="75.0" layoutY="183.0" prefHeight="42.0" prefWidth="251.0" styleClass="p1" stylesheets="@Styles/style_info_admin.css" />
+            <Pane layoutX="75.0" layoutY="282.0" prefHeight="42.0" prefWidth="251.0" styleClass="p1" stylesheets="@Styles/style_info_admin.css" />
             <Label layoutX="179.0" layoutY="136.0" text="Nombre" textFill="#e7e5e5" />
-            <Label alignment="CENTER" layoutX="182.0" layoutY="257.0" text="Correo" textFill="#e7e5e5" />
+            <Label alignment="CENTER" layoutX="182.0" layoutY="242.0" text="Correo" textFill="#e7e5e5" />
          </children>
       </Pane>
     </children>

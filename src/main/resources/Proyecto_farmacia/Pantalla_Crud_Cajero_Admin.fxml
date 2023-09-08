@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import Proyecto_farmacia.Controladores.ControladorPanel?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="683.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto_farmacia.Controladores.ControladorCrudCajeroAdmin">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="683.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto_farmacia.Controladores.ControladorCrudCajeroAdmin">
     <children>
         <VBox alignment="TOP_CENTER" layoutY="161.0" prefHeight="574.0" prefWidth="228.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
@@ -20,7 +27,7 @@
                         </ImageView>
                     </children>
                 </Pane>
-                <Button fx:id="BotonInicio" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Home" textFill="#e7e5e5">
+                <Button fx:id="BotonInicio" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Inicio" textFill="#e7e5e5">
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -82,46 +89,46 @@
                 </Button>
             </children>
         </VBox>
-        <Pane layoutX="553.0" layoutY="7.0" prefHeight="31.0" prefWidth="124.0">
+        <Pane layoutX="447.0" layoutY="8.0" prefHeight="42.0" prefWidth="200.0">
             <children>
-                <Circle fill="#fa4875" layoutX="97.0" layoutY="15.0" radius="9.0" stroke="#fa4771" strokeType="INSIDE" />
-                <Circle fill="#42cf9b" layoutX="62.0" layoutY="15.0" radius="9.0" stroke="#42cf9b" strokeType="INSIDE" />
+                <Button fx:id="BotonCerrarApp" layoutX="162.0" layoutY="13.0" mnemonicParsing="false" onAction="#HClicks" styleClass="circle-button" stylesheets="@Styles/style.css" textFill="#fa4878" />
+                <Button fx:id="BotonMinimizarApp" layoutX="130.0" layoutY="13.0" mnemonicParsing="false" onAction="#HClicks" styleClass="circle-button2" stylesheets="@Styles/style.css" />
             </children>
         </Pane>
-        <Pane layoutX="242.0" layoutY="38.0" prefHeight="530.0" prefWidth="425.0" styleClass="panel_bordes" stylesheets="@Styles/style_info_admin.css">
+        <Pane layoutX="228.0" layoutY="38.0" prefHeight="530.0" prefWidth="448.0" styleClass="panel_bordes" stylesheets="@Styles/style_info_admin.css">
             <children>
                 <ImageView fitHeight="64.0" fitWidth="55.0" layoutX="5.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@images/Cajero.jpg" />
                     </image>
                 </ImageView>
-                <Label alignment="CENTER" layoutX="147.0" layoutY="25.0" prefHeight="21.0" prefWidth="216.0" text="GESTION DE CAJEROS" textFill="#e7e5e5" />
-                <Label layoutX="22.0" layoutY="86.0" prefHeight="21.0" prefWidth="55.0" text="ID:" textFill="#e7e5e5" />
-                <Label alignment="CENTER" layoutX="20.0" layoutY="124.0" text="Nombre:" textFill="#e7e5e5" />
-            <Label layoutX="19.0" layoutY="164.0" text="Apellido" textFill="#e7e5e5" />
-            <Label layoutX="17.0" layoutY="206.0" text="Dirección:" textFill="#e7e5e5" />
-            <Label layoutX="19.0" layoutY="245.0" text="Correo:" textFill="#e7e5e5" />
-            <Label layoutX="17.0" layoutY="283.0" text="Telefono:" textFill="#e7e5e5" />
-            <Label layoutX="19.0" layoutY="324.0" text="Usuario" textFill="#e7e5e5" />
-            <Label layoutX="17.0" layoutY="364.0" text="Contraseña:" textFill="#e7e5e5" />
-            <TextField layoutX="101.0" layoutY="84.0" />
-            <TextField layoutX="101.0" layoutY="120.0" />
-            <TextField layoutX="101.0" layoutY="162.0" />
-            <TextField layoutX="101.0" layoutY="202.0" />
-            <TextField layoutX="101.0" layoutY="241.0" />
-            <TextField layoutX="101.0" layoutY="279.0" />
-            <TextField layoutX="101.0" layoutY="320.0" />
-            <TextField layoutX="101.0" layoutY="360.0" />
-            <Button layoutX="306.0" layoutY="75.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Buscar" />
-            <Button layoutX="322.0" layoutY="149.0" mnemonicParsing="false" text="Eliminar" />
-            <Button layoutX="326.0" layoutY="218.0" mnemonicParsing="false" text="Agregar" />
-            <Button layoutX="325.0" layoutY="278.0" mnemonicParsing="false" text="Actualizar" />
-            <TableView layoutX="58.0" layoutY="399.0" prefHeight="124.0" prefWidth="287.0">
+                <Label layoutX="147.0" layoutY="25.0" prefHeight="21.0" prefWidth="216.0" text="GESTION DE CAJEROS" textFill="#e7e5e5" />
+                <Label fx:id="Id_gestion_cajero" layoutX="18.0" layoutY="80.0" prefHeight="21.0" prefWidth="55.0" text="ID:" textFill="#e7e5e5" />
+                <Label fx:id="Nombre_gestion_cajero" alignment="CENTER" layoutX="214.0" layoutY="82.0" text="Nombre:" textFill="#e7e5e5" />
+            <Label fx:id="Apellido_gestion_cajero" layoutX="16.0" layoutY="141.0" text="Apellido" textFill="#e7e5e5" />
+            <Label fx:id="Direccion_gestion_cajero" layoutX="215.0" layoutY="141.0" text="Dirección:" textFill="#e7e5e5" />
+            <Label fx:id="Correo_gestion_cajero" layoutX="14.0" layoutY="204.0" text="Correo:" textFill="#e7e5e5" />
+            <Label fx:id="Telefono_gestion_cajero" layoutX="216.0" layoutY="204.0" text="Telefono:" textFill="#e7e5e5" />
+            <Label fx:id="Usuario_gestion_cajero" layoutX="18.0" layoutY="265.0" text="Usuario" textFill="#e7e5e5" />
+            <Label fx:id="Contrasena_gestion_cajero" layoutX="216.0" layoutY="265.0" text="Contraseña:" textFill="#e7e5e5" />
+            <TextField fx:id="Id_insertar_gestion_cajero" layoutX="12.0" layoutY="108.0" />
+            <TextField fx:id="Nombre_insertar_gestion_cajero" layoutX="214.0" layoutY="108.0" />
+            <TextField fx:id="Direccion_insertar_gestion_cajero" layoutX="214.0" layoutY="161.0" />
+            <TextField fx:id="Correo_insertar_gestion_cajero" layoutX="10.0" layoutY="225.0" />
+            <TextField fx:id="Telefono_insertar_gestion_cajero" layoutX="214.0" layoutY="225.0" />
+            <TextField fx:id="Usuario_insertar_gestion_cajero" layoutX="10.0" layoutY="286.0" />
+            <TextField fx:id="Contrasena_insertar_gestion_cajero" layoutX="214.0" layoutY="286.0" />
+            <Button fx:id="Buscar_gestion_cajero" layoutX="14.0" layoutY="335.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Buscar" />
+            <Button fx:id="Eliminar_gestion_cajero" layoutX="116.0" layoutY="335.0" mnemonicParsing="false" text="Eliminar" />
+            <Button fx:id="Agregar_gestion_cajero" layoutX="211.0" layoutY="335.0" mnemonicParsing="false" text="Agregar" />
+            <Button fx:id="Actualizar_gestion_cajero" layoutX="307.0" layoutY="335.0" mnemonicParsing="false" text="Actualizar" />
+            <TableView layoutX="10.0" layoutY="379.0" prefHeight="137.0" prefWidth="417.0">
               <columns>
                 <TableColumn prefWidth="75.0" text="C1" />
                 <TableColumn prefWidth="75.0" text="C2" />
               </columns>
             </TableView>
+            <TextField fx:id="Apellido_insertar_gestion_cajero" layoutX="12.0" layoutY="162.0" />
             </children>
         </Pane>
     </children>
