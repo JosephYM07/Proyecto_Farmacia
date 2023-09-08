@@ -1,6 +1,7 @@
 package Proyecto_farmacia.Controladores;
 
 import Proyecto_farmacia.Controladores.Modulos.M_Admin;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -190,23 +191,29 @@ public class ControladorAdmin {
     }
     private void cargarVentanaInterfazPrincipal() {
         try {
-            // Cargar el archivo FXML de la nueva ventana
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_login_cajero.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_info_admin.fxml"));
             Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.initStyle(StageStyle.UNDECORATED);
+            // Accede a la ventana actual y ciérrala
+            Stage currentStage = (Stage) BotonCajeros.getScene().getWindow();
+            currentStage.close();
 
-            // Crear una nueva escena
-            Scene scene = new Scene(root);
-
-            // Obtener el escenario actual y establecer la nueva escena
-            Stage stage = (Stage) IngresoUsuarioAdmin.getScene().getWindow();
-            stage.setScene(scene);
-
-            // Mostrar la nueva ventana
+            root.setOnMousePressed(event -> {
+                x = event.getSceneX();
+                y = event.getSceneY();
+            });
+            root.setOnMouseDragged(event -> {
+                stage.setX(event.getScreenX() - x);
+                stage.setY(event.getScreenY() - y);
+            });
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
 
 }
 
