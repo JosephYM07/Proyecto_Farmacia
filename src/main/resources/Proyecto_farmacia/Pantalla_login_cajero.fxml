@@ -85,7 +85,7 @@
         </VBox>
         <StackPane layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
             <children>
-                <Pane fx:id="pnlOverview" prefHeight="576.0" prefWidth="793.0">
+                <Pane prefHeight="576.0" prefWidth="793.0">
                     <children>
                         <Label layoutX="21.0" layoutY="14.0" text="Inicio de sesión Cajero" textFill="#e7e5e5">
                             <font>
@@ -100,12 +100,23 @@
                         </Pane>
                         <Pane layoutX="202.0" layoutY="77.0" prefHeight="426.0" prefWidth="372.0" styleClass="panel_bordes" stylesheets="@Styles/style.css">
                             <children>
+<<<<<<< HEAD
+                                <ImageView fitHeight="73.0" fitWidth="101.0" layoutX="136.0" layoutY="26.0" pickOnBounds="true">
+=======
                                 <ImageView fitHeight="75.0" fitWidth="71.0" layoutX="154.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+>>>>>>> 0b45c09c86955131b63d0f1bf017f52ead504bbf
                                     <image>
                                         <Image url="@images/Cajero.jpg" />
                                     </image>
                                 </ImageView>
+<<<<<<< HEAD
+                                <Label layoutX="165.0" layoutY="99.0" text="Cajero" textFill="#e7e5e5">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+=======
                                 <Label layoutX="166.0" layoutY="93.0" text="Cajero" textFill="#e7e5e5" />
+>>>>>>> 0b45c09c86955131b63d0f1bf017f52ead504bbf
                                 <Label layoutX="29.0" layoutY="130.0" prefHeight="31.0" prefWidth="82.0" text="Usuario" textFill="#e7e5e5">
                                     <font>
                                         <Font size="18.0" />
