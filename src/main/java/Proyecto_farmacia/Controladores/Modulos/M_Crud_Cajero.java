@@ -2,6 +2,10 @@ package Proyecto_farmacia.Controladores.Modulos;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.StringProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.control.cell.PropertyValueFactory;
+
 
 public class M_Crud_Cajero {
     private IntegerProperty id;

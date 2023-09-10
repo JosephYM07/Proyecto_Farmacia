@@ -14,6 +14,12 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.control.cell.PropertyValueFactory;
+import java.net.URL;
+import java.util.ResourceBundle;
+
 
 import java.io.IOException;
 
@@ -179,4 +185,18 @@ public class ControladorInfoAdmin {
     private TableColumn<M_Crud_Cajero, String> columnaUsuario;
     @FXML
     private TableColumn<M_Crud_Cajero, String> columnaContraseña;
+
+    private ObservableList<M_Crud_Cajero> listaCajeros = FXCollections.observableArrayList();
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        // Configura las columnas
+        columnaID.setCellValueFactory(cellData -> cellData.getValue().idProperty().asObject());
+        columnaNombres.setCellValueFactory(cellData -> cellData.getValue().nombresProperty());
+        columnaApellidos.setCellValueFactory(cellData -> cellData.getValue().apellidosProperty());
+        // Configura las demás columnas de manera similar
+
+        // Asigna los datos a la TableView
+        tablaUsuarios.setItems(listaCajeros);
+    }
+
 }
