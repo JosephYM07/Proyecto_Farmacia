@@ -1,13 +1,19 @@
 package Proyecto_farmacia.Controladores;
 
+import Proyecto_farmacia.Controladores.Modulos.M_Crud_Cajero;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import javafx.scene.control.Button;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.IOException;
 
@@ -153,4 +159,24 @@ public class ControladorInfoAdmin {
             e.printStackTrace();
         }
     }
+
+    //Mecanismo CRUD Cajeros
+    @FXML
+    private TableView<M_Crud_Cajero> tablaUsuarios;
+    @FXML
+    private TableColumn<M_Crud_Cajero, Integer> columnaID;
+    @FXML
+    private TableColumn<M_Crud_Cajero, String> columnaNombres;
+    @FXML
+    private TableColumn<M_Crud_Cajero, String> columnaApellidos;
+    @FXML
+    private TableColumn<M_Crud_Cajero, String> columnaDireccion;
+    @FXML
+    private TableColumn<M_Crud_Cajero, String> columnaCorreo;
+    @FXML
+    private TableColumn<M_Crud_Cajero, String> columnaContacto;
+    @FXML
+    private TableColumn<M_Crud_Cajero, String> columnaUsuario;
+    @FXML
+    private TableColumn<M_Crud_Cajero, String> columnaContraseña;
 }
