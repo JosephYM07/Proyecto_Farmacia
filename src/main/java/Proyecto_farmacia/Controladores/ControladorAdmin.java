@@ -147,7 +147,7 @@ public class ControladorAdmin {
     private static final String CONTRASENA = "SoaD1725.";
 
     @FXML
-    private TextField IngresoUsuarioAdmin;
+        private TextField IngresoUsuarioAdmin;
 
     @FXML
     private PasswordField IngresoContraseñaAdmin;

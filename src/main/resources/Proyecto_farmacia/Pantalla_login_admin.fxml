@@ -111,16 +111,16 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="39.0" layoutY="163.0" prefHeight="31.0" prefWidth="287.0" styleClass="Usuario" stylesheets="@Styles/style.css" />
+                        <TextField fx:id="IngresoUsuarioAdmin" layoutX="39.0" layoutY="163.0" prefHeight="31.0" prefWidth="287.0" styleClass="Usuario" stylesheets="@Styles/style.css" />
                         <Label layoutX="34.0" layoutY="230.0" prefHeight="31.0" prefWidth="113.0" text="Contraseña" textFill="#e7e5e5">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <PasswordField layoutX="36.0" layoutY="279.0" prefHeight="31.0" prefWidth="290.0" styleClass="contrasenia_admin" stylesheets="@Styles/style.css" />
+                        <PasswordField fx:id="IngresoContraseñaAdmin" layoutX="36.0" layoutY="279.0" prefHeight="31.0" prefWidth="290.0" styleClass="contrasenia_admin" stylesheets="@Styles/style.css" />
                         <Pane layoutX="62.0" layoutY="337.0" prefHeight="50.0" prefWidth="240.0" styleClass="borde_panel_log_adm" stylesheets="@Styles/style.css">
                            <children>
-                              <Button layoutX="69.0" layoutY="11.0" mnemonicParsing="false" styleClass="boton_login_admin" stylesheets="@Styles/style.css" text="Iniciar Sesión" />
+                              <Button layoutX="40.0" layoutY="11.0" mnemonicParsing="false" onAction="#btnIniciarSesion" prefHeight="28.0" prefWidth="171.0" styleClass="boton_login_admin" stylesheets="@Styles/style.css" text="Iniciar Sesión" />
                            </children>
                         </Pane>
                      </children>
