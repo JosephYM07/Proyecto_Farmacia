@@ -102,10 +102,16 @@
             <Label fx:id="Contrasena_gestion_cajero" layoutX="18.0" layoutY="203.0" text="Contraseña:" textFill="#e7e5e5" />
             <TextField fx:id="Id_insertar_gestion_cajero" layoutX="15.0" layoutY="41.0" prefHeight="25.0" prefWidth="46.0" />
             <Button fx:id="Buscar_gestion_cajero" layoutX="35.0" layoutY="280.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Buscar" />
-            <TableView layoutX="35.0" layoutY="324.0" prefHeight="166.0" prefWidth="587.0">
+            <TableView layoutX="9.0" layoutY="324.0" prefHeight="166.0" prefWidth="616.0">
               <columns>
-                <TableColumn prefWidth="75.0" text="C1" />
-                <TableColumn prefWidth="75.0" text="C2" />
+                <TableColumn prefWidth="75.0" text="ID" />
+                <TableColumn prefWidth="75.0" text="Nombres" />
+                  <TableColumn prefWidth="75.0" text="Apellidos" />
+                  <TableColumn prefWidth="75.0" text="Dirección" />
+                  <TableColumn prefWidth="75.0" text="Correo" />
+                  <TableColumn prefWidth="75.0" text="Contacto" />
+                  <TableColumn prefWidth="75.0" text="Usuario" />
+                  <TableColumn prefWidth="90.0" text="Contraseña" />
               </columns>
             </TableView>
             <TextField fx:id="Id_insertar_gestion_cajero1" layoutX="18.0" layoutY="166.0" />
