@@ -68,7 +68,28 @@ public class ControladorAdmin {
 
     //Este sirve para mostrar la ventana
     private void Pantalla_Home() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_Home.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.initStyle(StageStyle.UNDECORATED);
+            // Accede a la ventana actual y ciérrala
+            Stage currentStage = (Stage) BotonCajeros.getScene().getWindow();
+            currentStage.close();
 
+            root.setOnMousePressed(event -> {
+                x = event.getSceneX();
+                y = event.getSceneY();
+            });
+            root.setOnMouseDragged(event -> {
+                stage.setX(event.getScreenX() - x);
+                stage.setY(event.getScreenY() - y);
+            });
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void Pantalla_Cajeros() throws IOException {

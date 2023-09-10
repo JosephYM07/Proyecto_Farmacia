@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto_farmacia.Controladores.ControladorAdmin">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto_farmacia.Controladores.ControladorHome">
     <children>
         <VBox alignment="TOP_CENTER" layoutY="161.0" prefHeight="415.0" prefWidth="256.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
@@ -19,12 +23,12 @@
                         </ImageView>
                   <Pane layoutX="8.0" layoutY="294.0" prefHeight="50.0" prefWidth="240.0" styleClass="borde_panel_log_adm" stylesheets="@Styles/style.css">
                      <children>
-                        <Button layoutX="73.0" layoutY="12.0" mnemonicParsing="false" styleClass="boton_login_admin" stylesheets="@Styles/style.css" text="Administrador" />
+                        <Button fx:id="BotonAdmin" layoutX="17.0" layoutY="12.0" mnemonicParsing="false" onAction="#HClicks" prefHeight="28.0" prefWidth="200.0" styleClass="boton_login_admin" stylesheets="@Styles/style.css" text="Administrador" />
                      </children>
                   </Pane>
                   <Pane layoutX="8.0" layoutY="382.0" prefHeight="50.0" prefWidth="240.0" styleClass="borde_panel_log_adm" stylesheets="@Styles/style.css">
                      <children>
-                        <Button layoutX="102.0" layoutY="12.0" mnemonicParsing="false" styleClass="boton_login_admin" stylesheets="@Styles/style.css" text="Cajero" />
+                        <Button fx:id="BotonCajeros" layoutX="30.0" layoutY="12.0" mnemonicParsing="false" onAction="#HClicks" prefHeight="28.0" prefWidth="189.0" styleClass="boton_login_admin" stylesheets="@Styles/style.css" text="Cajero" />
                      </children>
                   </Pane>
                   <Label layoutX="14.0" layoutY="229.0" text="Elegir perfil:" textFill="#e7e5e5">
@@ -41,7 +45,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-            <Pane layoutX="868.0" prefHeight="42.0" prefWidth="200.0">
+            <Pane layoutX="821.0" layoutY="14.0" prefHeight="42.0" prefWidth="200.0">
                 <children>
                     <Button fx:id="BotonCerrarApp" layoutX="162.0" layoutY="13.0" mnemonicParsing="false" onAction="#HClicks" styleClass="circle-button" stylesheets="@Styles/style.css" textFill="#fa4878" />
                     <Button fx:id="BotonMinimizarApp" layoutX="130.0" layoutY="13.0" mnemonicParsing="false" onAction="#HClicks" styleClass="circle-button2" stylesheets="@Styles/style.css" />
