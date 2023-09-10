@@ -100,7 +100,6 @@ public class ControladorAdmin {
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.initStyle(StageStyle.UNDECORATED);
-            // Accede a la ventana actual y ciérrala
             Stage currentStage = (Stage) BotonCajeros.getScene().getWindow();
             currentStage.close();
 
@@ -124,7 +123,6 @@ public class ControladorAdmin {
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
         stage.initStyle(StageStyle.UNDECORATED);
-        // Accede a la ventana actual y ciérrala
         Stage currentStage = (Stage) BotonCajeros.getScene().getWindow();
         currentStage.close();
 
@@ -147,7 +145,7 @@ public class ControladorAdmin {
     private static final String CONTRASENA = "SoaD1725.";
 
     @FXML
-        private TextField IngresoUsuarioAdmin;
+    private TextField IngresoUsuarioAdmin;
 
     @FXML
     private PasswordField IngresoContraseñaAdmin;
@@ -195,11 +193,11 @@ public class ControladorAdmin {
         if (accesoPermitido) {
             // Inicio de sesión exitoso
             mostrarMensaje("Inicio de sesión exitoso.");
+            System.out.println("Inicio de sesión exitoso.");
             cargarVentanaInterfazPrincipal();
-            // Realiza acciones adicionales aquí
         } else {
-            // Mostrar un mensaje de error en caso de credenciales incorrectas
             mostrarMensaje("Inicio de sesión fallido. Verifica tus credenciales.");
+            System.out.println("Inicio de sesión fallido. Verifica tus credenciales.");
         }
     }
 
@@ -210,6 +208,7 @@ public class ControladorAdmin {
         alert.setContentText(mensaje);
         alert.showAndWait();
     }
+
     private void cargarVentanaInterfazPrincipal() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_info_admin.fxml"));
@@ -217,7 +216,6 @@ public class ControladorAdmin {
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.initStyle(StageStyle.UNDECORATED);
-            // Accede a la ventana actual y ciérrala
             Stage currentStage = (Stage) BotonCajeros.getScene().getWindow();
             currentStage.close();
 

@@ -60,7 +60,6 @@ public class ControladorHome {
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.initStyle(StageStyle.UNDECORATED);
-            // Accede a la ventana actual y ciérrala
             Stage currentStage = (Stage) BotonCajeros.getScene().getWindow();
             currentStage.close();
 
@@ -84,7 +83,6 @@ public class ControladorHome {
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
         stage.initStyle(StageStyle.UNDECORATED);
-        // Accede a la ventana actual y ciérrala
         Stage currentStage = (Stage) BotonCajeros.getScene().getWindow();
         currentStage.close();
 

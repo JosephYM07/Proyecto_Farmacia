@@ -73,7 +73,6 @@ public class ControladorCajero {
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.initStyle(StageStyle.UNDECORATED);
-            // Accede a la ventana actual y ciérrala
             Stage currentStage = (Stage) BotonCajeros.getScene().getWindow();
             currentStage.close();
 
@@ -99,7 +98,6 @@ public class ControladorCajero {
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.initStyle(StageStyle.UNDECORATED);
-            // Accede a la ventana actual y ciérrala
             Stage currentStage = (Stage) BotonCajeros.getScene().getWindow();
             currentStage.close();
 
@@ -123,7 +121,6 @@ public class ControladorCajero {
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
         stage.initStyle(StageStyle.UNDECORATED);
-        // Accede a la ventana actual y ciérrala
         Stage currentStage = (Stage) BotonCajeros.getScene().getWindow();
         currentStage.close();
 
@@ -155,7 +152,7 @@ public class ControladorCajero {
     private void cargarCajerosDesdeBD() {
         String URL = "jdbc:mysql://localhost:3306/farmacia";
         String USUARIO = "root";
-        String CONTRASENA = "SoaD1725."; // Cambia esto por tu contraseña
+        String CONTRASENA = "SoaD1725.";
 
         try (Connection conexion = DriverManager.getConnection(URL, USUARIO, CONTRASENA)) {
             String consulta = "SELECT UsuCaj, ConCaj FROM cajeros";
@@ -191,10 +188,11 @@ public class ControladorCajero {
         if (accesoPermitido) {
             // Inicio de sesión exitoso
             mostrarMensaje("Inicio de sesión exitoso.");
+            System.out.println("Inicio de sesión exitoso.");
             cargarVentanaInterfazPrincipal();
         } else {
-            // Mostrar un mensaje de error en caso de credenciales incorrectas
             mostrarMensaje("Inicio de sesión fallido. Verifica tus credenciales.");
+            System.out.println("Inicio de sesión fallido. Verifica tus credenciales.");
         }
     }
 

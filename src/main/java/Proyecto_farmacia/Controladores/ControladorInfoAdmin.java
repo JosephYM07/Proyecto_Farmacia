@@ -20,7 +20,7 @@ public class ControladorInfoAdmin {
     @FXML
     private Button BotonRevisionFacturas;
     @FXML
-    private Button BotonSalir;
+    private Button BotonCerrarSesion;
     @FXML
     private Button BotonMinimizarApp;
     @FXML
@@ -43,9 +43,12 @@ public class ControladorInfoAdmin {
                 throw new RuntimeException(e);
             }
         });
-        BotonSalir.setOnAction(event -> {
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            stage.close();
+        BotonCerrarSesion.setOnAction(event -> {
+            try {
+                Cerrar_Sesion();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         });
         BotonCerrarApp.setOnAction(event -> {
             Stage stage = (Stage) BotonCerrarApp.getScene().getWindow();
@@ -65,7 +68,6 @@ public class ControladorInfoAdmin {
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.initStyle(StageStyle.UNDECORATED);
-            // Accede a la ventana actual y ciérrala
             Stage currentStage = (Stage) BotonAgregarCajero.getScene().getWindow();
             currentStage.close();
 
@@ -91,7 +93,6 @@ public class ControladorInfoAdmin {
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.initStyle(StageStyle.UNDECORATED);
-            // Accede a la ventana actual y ciérrala
             Stage currentStage = (Stage) BotonIngresoMercaderia.getScene().getWindow();
             currentStage.close();
 
@@ -115,10 +116,8 @@ public class ControladorInfoAdmin {
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
         stage.initStyle(StageStyle.UNDECORATED);
-        // Accede a la ventana actual y ciérrala
         Stage currentStage = (Stage) BotonRevisionFacturas.getScene().getWindow();
         currentStage.close();
-
         root.setOnMousePressed(event -> {
             x = event.getSceneX();
             y = event.getSceneY();
@@ -129,5 +128,29 @@ public class ControladorInfoAdmin {
         });
         stage.show();
 
+    }
+    private void Cerrar_Sesion()throws IOException{
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_Home.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.initStyle(StageStyle.UNDECORATED);
+            Stage currentStage = (Stage) BotonCerrarSesion.getScene().getWindow();
+            currentStage.close();
+            root.setOnMousePressed(event2 -> {
+                x = event2.getSceneX();
+                y = event2.getSceneY();
+            });
+
+            root.setOnMouseDragged(event2 -> {
+                stage.setX(event2.getScreenX() - x);
+                stage.setY(event2.getScreenY() - y);
+            });
+
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

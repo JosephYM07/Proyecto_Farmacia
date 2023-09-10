@@ -26,7 +26,7 @@
                         </ImageView>
                     </children>
                 </Pane>
-                <Button fx:id="BotonInicio" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Inicio" textFill="#e7e5e5">
+                <Button fx:id="BotonInicio" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#HClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Inicio" textFill="#e7e5e5">
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -44,7 +44,7 @@
                         <Insets left="50.0" />
                     </padding>
                 </Button>
-                <Button fx:id="BotonIngresoMercaderia" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Ingreso Mercadería" textFill="#e7e5e5">
+                <Button fx:id="BotonIngresoMercaderia" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#HClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Ingreso Mercadería" textFill="#e7e5e5">
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -59,7 +59,7 @@
                         <Insets left="50.0" />
                     </padding>
                 </Button>
-                <Button fx:id="BotonRevisionFacturas" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Inicio" textFill="#e7e5e5">
+                <Button fx:id="BotonRevisionFacturas" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#HClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Revisar Ventas" textFill="#e7e5e5">
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -74,7 +74,7 @@
                         <Insets left="50.0" />
                     </padding>
                 </Button>
-                <Button fx:id="BotonSalir" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Salir">
+                <Button fx:id="BotonCerrarSesion" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#HClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Cerrar Sesión">
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                             <image>
