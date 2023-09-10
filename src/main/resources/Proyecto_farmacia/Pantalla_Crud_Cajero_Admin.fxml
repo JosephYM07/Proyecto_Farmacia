@@ -88,45 +88,46 @@
                 </Button>
             </children>
         </VBox>
-        <Pane layoutX="447.0" layoutY="8.0" prefHeight="42.0" prefWidth="200.0">
-            <Pane layoutX="586.0" prefHeight="42.0" prefWidth="200.0">
-                <children>
-                    <Button fx:id="BotonCerrarApp" layoutX="162.0" layoutY="13.0" mnemonicParsing="false" onAction="#HClicks" styleClass="circle-button" stylesheets="@Styles/style.css" textFill="#fa4878" />
-                    <Button fx:id="BotonMinimizarApp" layoutX="130.0" layoutY="13.0" mnemonicParsing="false" onAction="#HClicks" styleClass="circle-button2" stylesheets="@Styles/style.css" />
-                </children>
-            </Pane>
-        </Pane>
-        <Pane layoutX="244.0" layoutY="24.0" prefHeight="530.0" prefWidth="629.0" styleClass="panel_bordes" stylesheets="@Styles/style_info_admin.css">
+        <Pane layoutX="447.0" layoutY="8.0" prefHeight="42.0" prefWidth="200.0" />
+        <Pane layoutX="244.0" layoutY="35.0" prefHeight="519.0" prefWidth="629.0" styleClass="panel_bordes" stylesheets="@Styles/style_info_admin.css">
             <children>
-                <Label layoutX="147.0" layoutY="25.0" prefHeight="21.0" prefWidth="216.0" text="GESTION DE CAJEROS" textFill="#e7e5e5" />
-                <Label fx:id="Id_gestion_cajero" layoutX="18.0" layoutY="80.0" prefHeight="21.0" prefWidth="55.0" text="ID:" textFill="#e7e5e5" />
-                <Label fx:id="Nombre_gestion_cajero" alignment="CENTER" layoutX="214.0" layoutY="82.0" text="Nombre:" textFill="#e7e5e5" />
-            <Label fx:id="Apellido_gestion_cajero" layoutX="16.0" layoutY="141.0" text="Apellido" textFill="#e7e5e5" />
-            <Label fx:id="Direccion_gestion_cajero" layoutX="215.0" layoutY="141.0" text="Dirección:" textFill="#e7e5e5" />
-            <Label fx:id="Correo_gestion_cajero" layoutX="14.0" layoutY="204.0" text="Correo:" textFill="#e7e5e5" />
-            <Label fx:id="Telefono_gestion_cajero" layoutX="216.0" layoutY="204.0" text="Telefono:" textFill="#e7e5e5" />
-            <Label fx:id="Usuario_gestion_cajero" layoutX="18.0" layoutY="265.0" text="Usuario" textFill="#e7e5e5" />
-            <Label fx:id="Contrasena_gestion_cajero" layoutX="216.0" layoutY="265.0" text="Contraseña:" textFill="#e7e5e5" />
-            <TextField fx:id="Id_insertar_gestion_cajero" layoutX="12.0" layoutY="108.0" />
-            <TextField fx:id="Nombre_insertar_gestion_cajero" layoutX="214.0" layoutY="108.0" />
-            <TextField fx:id="Direccion_insertar_gestion_cajero" layoutX="214.0" layoutY="161.0" />
-            <TextField fx:id="Correo_insertar_gestion_cajero" layoutX="10.0" layoutY="225.0" />
-            <TextField fx:id="Telefono_insertar_gestion_cajero" layoutX="214.0" layoutY="225.0" />
-            <TextField fx:id="Usuario_insertar_gestion_cajero" layoutX="10.0" layoutY="286.0" />
-            <TextField fx:id="Contrasena_insertar_gestion_cajero" layoutX="214.0" layoutY="286.0" />
-            <Button fx:id="Buscar_gestion_cajero" layoutX="14.0" layoutY="335.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Buscar" />
-            <Button fx:id="Eliminar_gestion_cajero" layoutX="116.0" layoutY="335.0" mnemonicParsing="false" text="Eliminar" />
-            <Button fx:id="Agregar_gestion_cajero" layoutX="211.0" layoutY="335.0" mnemonicParsing="false" text="Agregar" />
-            <Button fx:id="Actualizar_gestion_cajero" layoutX="307.0" layoutY="335.0" mnemonicParsing="false" text="Actualizar" />
-            <TableView layoutX="10.0" layoutY="379.0" prefHeight="137.0" prefWidth="417.0">
+                <Label layoutX="244.0" layoutY="4.0" prefHeight="21.0" prefWidth="216.0" text="GESTION DE CAJEROS" textFill="#e7e5e5" />
+                <Label fx:id="Id_gestion_cajero" layoutX="15.0" layoutY="16.0" prefHeight="21.0" prefWidth="55.0" text="ID:" textFill="#e7e5e5" />
+                <Label fx:id="Nombre_gestion_cajero" alignment="CENTER" layoutX="19.0" layoutY="79.0" text="Nombre:" textFill="#e7e5e5" />
+            <Label fx:id="Apellido_gestion_cajero" layoutX="218.0" layoutY="79.0" text="Apellido" textFill="#e7e5e5" />
+            <Label fx:id="Direccion_gestion_cajero" layoutX="408.0" layoutY="145.0" text="Dirección:" textFill="#e7e5e5" />
+            <Label fx:id="Correo_gestion_cajero" layoutX="19.0" layoutY="145.0" text="Correo:" textFill="#e7e5e5" />
+            <Label fx:id="Telefono_gestion_cajero" layoutX="216.0" layoutY="145.0" text="Telefono:" textFill="#e7e5e5" />
+            <Label fx:id="Usuario_gestion_cajero" layoutX="408.0" layoutY="81.0" text="Usuario" textFill="#e7e5e5" />
+            <Label fx:id="Contrasena_gestion_cajero" layoutX="18.0" layoutY="203.0" text="Contraseña:" textFill="#e7e5e5" />
+            <TextField fx:id="Id_insertar_gestion_cajero" layoutX="15.0" layoutY="41.0" prefHeight="25.0" prefWidth="46.0" />
+            <Button fx:id="Buscar_gestion_cajero" layoutX="35.0" layoutY="280.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Buscar" />
+            <TableView layoutX="35.0" layoutY="324.0" prefHeight="166.0" prefWidth="587.0">
               <columns>
                 <TableColumn prefWidth="75.0" text="C1" />
                 <TableColumn prefWidth="75.0" text="C2" />
               </columns>
             </TableView>
-            <TextField fx:id="Apellido_insertar_gestion_cajero" layoutX="12.0" layoutY="162.0" />
+            <TextField fx:id="Id_insertar_gestion_cajero1" layoutX="18.0" layoutY="166.0" />
+            <TextField fx:id="Id_insertar_gestion_cajero2" layoutX="18.0" layoutY="102.0" />
+            <TextField fx:id="Id_insertar_gestion_cajero3" layoutX="219.0" layoutY="102.0" />
+            <TextField fx:id="Id_insertar_gestion_cajero11" layoutX="408.0" layoutY="98.0" />
+            <TextField fx:id="Id_insertar_gestion_cajero12" layoutX="219.0" layoutY="166.0" />
+            <TextField fx:id="Id_insertar_gestion_cajero13" layoutX="408.0" layoutY="166.0" />
+            <TextField fx:id="Id_insertar_gestion_cajero14" layoutX="18.0" layoutY="220.0" />
+            <Button fx:id="Buscar_gestion_cajero2" layoutX="340.0" layoutY="499.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Seleccionar" />
+            <Button fx:id="Buscar_gestion_cajero3" layoutX="171.0" layoutY="499.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Listar" />
+            <Button fx:id="Buscar_gestion_cajero4" layoutX="494.0" layoutY="280.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Actualizar" />
+            <Button fx:id="Buscar_gestion_cajero5" layoutX="194.0" layoutY="280.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Agregar" />
+            <Button fx:id="Buscar_gestion_cajero6" layoutX="341.0" layoutY="280.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Eliminar" />
             </children>
         </Pane>
+         <Pane layoutX="673.0" prefHeight="42.0" prefWidth="200.0">
+             <children>
+                 <Button fx:id="BotonCerrarApp" layoutX="162.0" layoutY="13.0" mnemonicParsing="false" onAction="#HClicks" styleClass="circle-button" stylesheets="@Styles/style.css" textFill="#fa4878" />
+                 <Button fx:id="BotonMinimizarApp" layoutX="130.0" layoutY="13.0" mnemonicParsing="false" onAction="#HClicks" styleClass="circle-button2" stylesheets="@Styles/style.css" />
+             </children>
+         </Pane>
     </children>
     <effect>
         <DropShadow color="#1b1eeb" />
