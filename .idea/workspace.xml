@@ -5,8 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79a344de-7be1-4787-be88-c7d46a7f2408" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/ConexionMySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorCajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorCajero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorCrudCajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorCrudCajero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorCrudCajeroAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorCrudCajeroAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorFactCajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorFactCajero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorInfoAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorInfoAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/M_Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/M_Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/M_Cajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/M_Cajero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/M_Crud_Cajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/M_Crud_Cajero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Pantalla_Fac_Cajero.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Pantalla_Fac_Cajero.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Pantalla_login_cajero.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Pantalla_login_cajero.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/images/Cajero.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/images/Cajero.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Styles/style_info_admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Styles/style_info_admin.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +41,11 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorAdmin.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorCajero.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorCrudCajeroAdmin.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -45,14 +67,19 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "C:/Users/Alejandro/Desktop/Farmacia Proyecto/Proyecto_Farmacia/src/main/java/farmacia/proyecto_farmacia",
-    "last_opened_file_path": "C:/Users/Alejandro/Desktop/Farmacia Proyecto/Proyecto_Farmacia",
+    "last_opened_file_path": "C:/Users/Black-Tide/Documents/Software Codes/JAVA POO/DRIVERS MYSQL/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.43218392",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -138,10 +165,26 @@
       <workItem from="1694150566285" duration="788000" />
       <workItem from="1694400812432" duration="1147000" />
       <workItem from="1694402176157" duration="1418000" />
+      <workItem from="1694464494596" duration="2573000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorCrudCajeroAdmin.java</url>
+          <line>70</line>
+          <properties class="Proyecto_farmacia.Controladores.ControladorCrudCajeroAdmin" method="Pantalla_Info_admin">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
