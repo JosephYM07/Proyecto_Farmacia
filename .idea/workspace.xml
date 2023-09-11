@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="79a344de-7be1-4787-be88-c7d46a7f2408" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Pantalla_login_cajero.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Pantalla_login_cajero.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/images/Cajero.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/images/Cajero.jpg" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2UXXkTlaJYip536Mn8Btw26r4Qh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_directory_selection": "C:/Users/Alejandro/Desktop/Farmacia Proyecto/Proyecto_Farmacia/src/main/java/farmacia/proyecto_farmacia",
+    "last_opened_file_path": "C:/Users/Alejandro/Desktop/Farmacia Proyecto/Proyecto_Farmacia",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="farmacia.proyecto_farmacia.HelloApplication" />
+      <module name="Proyecto_Farmacia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="farmacia.proyecto_farmacia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IndexJavaFX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="farmacia.proyecto_farmacia.IndexJavaFX" />
+      <module name="Proyecto_Farmacia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="farmacia.proyecto_farmacia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="farmacia.proyecto_farmacia.Login" />
+      <module name="Proyecto_Farmacia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="farmacia.proyecto_farmacia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Proyecto_farmacia.Main" />
+      <module name="Proyecto_Farmacia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Proyecto_farmacia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Login" />
+        <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.IndexJavaFX" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79a344de-7be1-4787-be88-c7d46a7f2408" name="Changes" comment="" />
+      <created>1693087041401</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693087041401</updated>
+      <workItem from="1693087042516" duration="5040000" />
+      <workItem from="1693671876851" duration="72000" />
+      <workItem from="1693671994493" duration="3623000" />
+      <workItem from="1693936160935" duration="2717000" />
+      <workItem from="1693939920568" duration="527000" />
+      <workItem from="1693940504354" duration="370000" />
+      <workItem from="1693941065898" duration="163000" />
+      <workItem from="1693942922570" duration="3685000" />
+      <workItem from="1694150463241" duration="95000" />
+      <workItem from="1694150566285" duration="788000" />
+      <workItem from="1694400812432" duration="1147000" />
+      <workItem from="1694402176157" duration="1418000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
