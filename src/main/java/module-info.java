@@ -5,6 +5,7 @@ module farmacia.proyecto_farmacia {
     requires java.sql;
 
 
+
     opens Proyecto_farmacia to javafx.fxml;
     exports Proyecto_farmacia;
     exports Proyecto_farmacia.Controladores;

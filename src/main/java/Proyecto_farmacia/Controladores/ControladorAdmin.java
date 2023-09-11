@@ -142,7 +142,7 @@ public class ControladorAdmin {
     //LOGIN
     private static final String URL = "jdbc:mysql://localhost:3306/farmacia";
     private static final String USUARIO = "root";
-    private static final String CONTRASENA = "SoaD1725.";
+    private static final String CONTRASENA = "Vodafone2002.";
 
     @FXML
     private TextField IngresoUsuarioAdmin;
