@@ -145,13 +145,12 @@ public class ControladorCrudCajeroAdmin {
     public ControladorCrudCajeroAdmin() {
         // Inicializa la conexión en el constructor
         try {
-            String url = "jdbc:mysql://localhost:3306/farmacia"; // Cambia esto por la URL de tu base de datos MySQL
+            String url = "jdbc:mysql://localhost:3306/farmacia";
             String usuario = "root";
             String contraseña = "SoaD1725.";
             connection = DriverManager.getConnection(url, usuario, contraseña);
         } catch (SQLException e) {
             e.printStackTrace();
-            // Maneja las excepciones de conexión aquí
         }
     }
 
@@ -209,7 +208,6 @@ public class ControladorCrudCajeroAdmin {
 
     @FXML
     private void btnAgregarCajero() {
-        // Implementa la lógica para agregar un nuevo Cajero
         String nombre = Nombre_Cajero.getText();
         String apellido = Apellido_Cajero.getText();
         String direccion = Direccion_Cajero.getText();
