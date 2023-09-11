@@ -1,6 +1,10 @@
 package Proyecto_farmacia.Controladores;
 
 import Proyecto_farmacia.Controladores.Modulos.M_Crud_Cajero;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -67,6 +71,7 @@ public class ControladorCrudCajeroAdmin {
             Stage stage = (Stage) BotonMinimizarApp.getScene().getWindow();
             stage.setIconified(true);
         });
+
     }
 
     private void Pantalla_Info_admin() throws IOException {
@@ -138,7 +143,6 @@ public class ControladorCrudCajeroAdmin {
     @FXML
     private TextField Password_Cajero;
 
-    // Declara una variable de conexión global
     private Connection connection;
 
     // Constructor del controlador
@@ -155,6 +159,7 @@ public class ControladorCrudCajeroAdmin {
     }
 
     //Acciones Botones
+    private ObservableList<M_Crud_Cajero> cajeros = FXCollections.observableArrayList();
     @FXML
     private void btnBuscarCajero() {
         String idCajeroStr = Id_Cajero.getText();
@@ -185,7 +190,7 @@ public class ControladorCrudCajeroAdmin {
             ResultSet resultSet = statement.executeQuery();
 
             if (resultSet.next()) {
-                // Llena los campos con los datos encontrados
+                // Se llena el formulario con los datos del cajero encontrado
                 Nombre_Cajero.setText(resultSet.getString("NomCaj"));
                 Apellido_Cajero.setText(resultSet.getString("ApeCaj"));
                 Direccion_Cajero.setText(resultSet.getString("DirCaj"));
@@ -193,6 +198,35 @@ public class ControladorCrudCajeroAdmin {
                 Telefono_Cajero.setText(resultSet.getString("TelCaj"));
                 Usuario_Cajero.setText(resultSet.getString("UsuCaj"));
                 Password_Cajero.setText(resultSet.getString("ConCaj"));
+            // Se crea un objeto M_Crud_Cajero con los datos del cajero encontrado
+                M_Crud_Cajero cajeroEncontrado = new M_Crud_Cajero(
+                        resultSet.getInt("idCaj"),
+                        resultSet.getString("NomCaj"),
+                        resultSet.getString("ApeCaj"),
+                        resultSet.getString("DirCaj"),
+                        resultSet.getString("CorCaj"),
+                        resultSet.getString("TelCaj"),
+                        resultSet.getString("UsuCaj"),
+                        resultSet.getString("ConCaj")
+                );
+
+                // Limpia la lista observable y agrega el cajero encontrado
+                cajeros.clear();
+                cajeros.add(cajeroEncontrado);
+
+                // Se asigna los valores del cajero a las celdas de la tabla
+                colIdCajero.setCellValueFactory(new PropertyValueFactory<>("id"));
+                colNombres.setCellValueFactory(new PropertyValueFactory<>("nombres"));
+                colApellidos.setCellValueFactory(new PropertyValueFactory<>("apellidos"));
+                colDireccion.setCellValueFactory(new PropertyValueFactory<>("direccion"));
+                colCorreo.setCellValueFactory(new PropertyValueFactory<>("correo"));
+                colContacto.setCellValueFactory(new PropertyValueFactory<>("contacto"));
+                colUsuario.setCellValueFactory(new PropertyValueFactory<>("usuario"));
+                colContraseña.setCellValueFactory(new PropertyValueFactory<>("contraseña"));
+
+                // Actualiza la tabla con la lista observable
+                tablaCajeros.setItems(cajeros);
+
             } else {
                 mostrarMensajeAdvertencia("Cajero no encontrado", "No se encontró ningún cajero con los datos especificados.");
             }
@@ -311,14 +345,98 @@ public class ControladorCrudCajeroAdmin {
         }
     }
 
+    //MOSTRAR DATOS EN TABLA
+    @FXML
+    private TableView<M_Crud_Cajero> tablaCajeros;
+    @FXML
+    private TableColumn<M_Crud_Cajero, Integer> colIdCajero;
+    @FXML
+    private TableColumn<M_Crud_Cajero, String> colNombres;
+    @FXML
+    private TableColumn<M_Crud_Cajero, String> colApellidos;
+    @FXML
+    private TableColumn<M_Crud_Cajero, String> colDireccion;
+    @FXML
+    private TableColumn<M_Crud_Cajero, String> colCorreo;
+    @FXML
+    private TableColumn<M_Crud_Cajero, String> colContacto;
+    @FXML
+    private TableColumn<M_Crud_Cajero, String> colUsuario;
+    @FXML
+    private TableColumn<M_Crud_Cajero, String> colContraseña;
+    private ObservableList<M_Crud_Cajero> listaCajeros = FXCollections.observableArrayList();
+
     @FXML
     private void btnPonerEnListaTodosLosCajeros() {
+        try {
+            // Asignar los valores del cajero a las celdas de la tabla
+            colIdCajero.setCellValueFactory(new PropertyValueFactory<>("id"));
+            colNombres.setCellValueFactory(new PropertyValueFactory<>("nombres"));
+            colApellidos.setCellValueFactory(new PropertyValueFactory<>("apellidos"));
+            colDireccion.setCellValueFactory(new PropertyValueFactory<>("direccion"));
+            colCorreo.setCellValueFactory(new PropertyValueFactory<>("correo"));
+            colContacto.setCellValueFactory(new PropertyValueFactory<>("contacto"));
+            colUsuario.setCellValueFactory(new PropertyValueFactory<>("usuario"));
+            colContraseña.setCellValueFactory(new PropertyValueFactory<>("contraseña"));
+            // Crear una consulta SQL para obtener todos los cajeros
+            String sql = "SELECT * FROM cajeros"; // Reemplaza "cajeros" con el nombre de la tabla
+            PreparedStatement statement = connection.prepareStatement(sql);
+            ResultSet resultSet = statement.executeQuery();
 
+            // Limpiar la lista antes de agregar nuevos datos
+            listaCajeros.clear();
+
+            // Se recorre los resultados de la consulta y agregarlos a la lista
+            while (resultSet.next()) {
+                int id = resultSet.getInt("idCaj");
+                String nombres = resultSet.getString("NomCaj");
+                String apellidos = resultSet.getString("ApeCaj");
+                String direccion = resultSet.getString("DirCaj");
+                String correo = resultSet.getString("CorCaj");
+                String contacto = resultSet.getString("TelCaj");
+                String usuario = resultSet.getString("UsuCaj");
+                String contraseña = resultSet.getString("ConCaj");
+                // Crear un objeto M_Crud_Cajero con los datos del cajero
+                M_Crud_Cajero cajero = new M_Crud_Cajero(
+                        id,
+                        nombres,
+                        apellidos,
+                        direccion,
+                        correo,
+                        contacto,
+                        usuario,
+                        contraseña
+                );
+                listaCajeros.add(cajero);
+            }
+
+            // Asignar la lista observable a la tabla
+            tablaCajeros.setItems(listaCajeros);
+        } catch (SQLException e) {
+            mostrarMensajeAdvertencia("Error", "No se pudieron cargar los cajeros desde la base de datos.");
+            e.printStackTrace();
+        }
     }
 
     @FXML
     private void btnSeleccionarCajeroEnTabla() {
+        // Obtén la fila seleccionada desde la tabla
+        M_Crud_Cajero cajeroSeleccionado = tablaCajeros.getSelectionModel().getSelectedItem();
 
+        // Se verifica si hay una fila seleccionada o no
+        if (cajeroSeleccionado != null) {
+            // Se copia la información del cajero seleccionado a los campos de texto
+            Id_Cajero.setText(String.valueOf(cajeroSeleccionado.getId()));
+            Nombre_Cajero.setText(cajeroSeleccionado.getNombres());
+            Apellido_Cajero.setText(cajeroSeleccionado.getApellidos());
+            Direccion_Cajero.setText(cajeroSeleccionado.getDireccion());
+            Correo_Cajero.setText(cajeroSeleccionado.getCorreo());
+            Telefono_Cajero.setText(cajeroSeleccionado.getContacto());
+            Usuario_Cajero.setText(cajeroSeleccionado.getUsuario());
+            Password_Cajero.setText(cajeroSeleccionado.getContraseña());
+        } else {
+            mostrarMensajeAdvertencia("Cajero no seleccionado", "Por favor, selecciona un cajero de la tabla.");
+        }
     }
 
     @FXML
@@ -331,6 +449,7 @@ public class ControladorCrudCajeroAdmin {
         Telefono_Cajero.clear();
         Usuario_Cajero.clear();
         Password_Cajero.clear();
+        tablaCajeros.getItems().clear();
     }
 
     private void mostrarMensajeAdvertencia(String titulo, String mensaje) {
