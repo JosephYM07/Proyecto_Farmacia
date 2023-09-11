@@ -1,6 +1,5 @@
 package Proyecto_farmacia.Controladores;
 
-import Proyecto_farmacia.Controladores.Modulos.ConexionMySQL;
 import Proyecto_farmacia.Controladores.Modulos.M_Cajero;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -151,8 +150,11 @@ public class ControladorCajero {
     }
 
     private void cargarCajerosDesdeBD() {
+        String URL = "jdbc:mysql://localhost:3306/farmacia";
+        String USUARIO = "root";
+        String CONTRASENA = "SoaD1725.";
 
-        try (Connection conexion = ConexionMySQL.obtenerConexion()) {
+        try (Connection conexion = DriverManager.getConnection(URL, USUARIO, CONTRASENA)) {
             String consulta = "SELECT UsuCaj, ConCaj FROM cajeros";
             PreparedStatement consultaPreparada = conexion.prepareStatement(consulta);
 

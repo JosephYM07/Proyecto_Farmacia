@@ -1,6 +1,5 @@
 package Proyecto_farmacia.Controladores;
 
-import Proyecto_farmacia.Controladores.Modulos.ConexionMySQL;
 import Proyecto_farmacia.Controladores.Modulos.M_Admin;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -141,6 +140,10 @@ public class ControladorAdmin {
 
     // Método que se llama al hacer clic en el botón de validar
     //LOGIN
+    private static final String URL = "jdbc:mysql://localhost:3306/farmacia";
+    private static final String USUARIO = "root";
+    private static final String CONTRASENA = "SoaD1725.";
+
     @FXML
     private TextField IngresoUsuarioAdmin;
 
@@ -155,7 +158,7 @@ public class ControladorAdmin {
     }
 
     private void cargarAdministradoresDesdeBD() {
-        try (Connection conexion = ConexionMySQL.obtenerConexion()) {
+        try (Connection conexion = DriverManager.getConnection(URL, USUARIO, CONTRASENA)) {
             String consulta = "SELECT UsuAdm, ConAdm FROM administradores";
             PreparedStatement consultaPreparada = conexion.prepareStatement(consulta);
 
