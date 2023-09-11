@@ -4,26 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79a344de-7be1-4787-be88-c7d46a7f2408" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/ConexionMySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorCajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorCajero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorCrudCajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorCrudCajero.java" afterDir="false" />
+    <list default="true" id="79a344de-7be1-4787-be88-c7d46a7f2408" name="Changes" comment="cambios">
       <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorCrudCajeroAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorCrudCajeroAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorFactCajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorFactCajero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorHome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorInfoAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorInfoAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/M_Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/M_Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/M_Cajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/M_Cajero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/M_Crud_Cajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/M_Crud_Cajero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Pantalla_Fac_Cajero.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Pantalla_Fac_Cajero.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Pantalla_login_cajero.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Pantalla_login_cajero.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Styles/style_info_admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Styles/style_info_admin.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,27 +45,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_directory_selection": "C:/Users/Alejandro/Desktop/Farmacia Proyecto/Proyecto_Farmacia/src/main/java/farmacia/proyecto_farmacia",
-    "last_opened_file_path": "C:/Users/Black-Tide/Documents/Software Codes/JAVA POO/DRIVERS MYSQL/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.43218392",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Alejandro/Desktop/Farmacia Proyecto/Proyecto_Farmacia/src/main/java/farmacia/proyecto_farmacia&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Black-Tide/Documents/Software Codes/JAVA POO/DRIVERS MYSQL/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.43218392&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="farmacia.proyecto_farmacia.HelloApplication" />
@@ -165,12 +148,25 @@
       <workItem from="1694150566285" duration="788000" />
       <workItem from="1694400812432" duration="1147000" />
       <workItem from="1694402176157" duration="1418000" />
-      <workItem from="1694464494596" duration="2573000" />
+      <workItem from="1694464494596" duration="2811000" />
     </task>
+    <task id="LOCAL-00001" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1694467117259</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694467117259</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cambios" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
