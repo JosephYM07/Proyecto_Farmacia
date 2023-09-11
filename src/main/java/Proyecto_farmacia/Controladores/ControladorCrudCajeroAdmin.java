@@ -1,12 +1,7 @@
 package Proyecto_farmacia.Controladores;
 
 import Proyecto_farmacia.Controladores.Modulos.M_Crud_Cajero;
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,7 +14,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.cell.PropertyValueFactory;
 
@@ -151,7 +145,7 @@ public class ControladorCrudCajeroAdmin {
         try {
             String url = "jdbc:mysql://localhost:3306/farmacia";
             String usuario = "root";
-            String contraseña = "Vodafone2002.";
+            String contraseña = "SoaD1725.";
             connection = DriverManager.getConnection(url, usuario, contraseña);
         } catch (SQLException e) {
             e.printStackTrace();
