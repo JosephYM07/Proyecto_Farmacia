@@ -158,40 +158,52 @@ public class ControladorCrudCajeroAdmin {
     //Acciones Botones
     @FXML
     private void btnBuscarCajero() {
-        // Obtiene la ID o el usuario a buscar
-        String idCajero = Id_Cajero.getText();
+        String idCajeroStr = Id_Cajero.getText();
         String usuarioCajero = Usuario_Cajero.getText();
 
-        // Realiza la consulta SQL para buscar el cajero
-        String query = "SELECT * FROM cajeros WHERE idCaj = ? OR UsuCaj = ?";
-        try {
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
-            preparedStatement.setString(1, idCajero);
-            preparedStatement.setString(2, usuarioCajero);
-            ResultSet resultSet = preparedStatement.executeQuery();
+        // Verifica si ambos campos están vacíos
+        if (idCajeroStr.isEmpty() && usuarioCajero.isEmpty()) {
+            mostrarMensajeAdvertencia("Campos vacíos", "Por favor, ingresa al menos el ID o el Usuario para buscar.");
+            return;
+        }
 
-            // Verifica si se encontró un resultado
+        try {
+            // Realiza la búsqueda basada en los campos no vacíos
+            String sql;
+            PreparedStatement statement;
+
+            if (!idCajeroStr.isEmpty()) {
+                int idCajero = Integer.parseInt(idCajeroStr);
+                sql = "SELECT * FROM cajeros WHERE idCaj = ?";
+                statement = connection.prepareStatement(sql);
+                statement.setInt(1, idCajero);
+            } else {
+                sql = "SELECT * FROM cajeros WHERE UsuCaj = ?";
+                statement = connection.prepareStatement(sql);
+                statement.setString(1, usuarioCajero);
+            }
+
+            ResultSet resultSet = statement.executeQuery();
+
             if (resultSet.next()) {
-                mostrarMensajeAdvertencia("Validacion", "Se encontró el cajero.");
+                // Llena los campos con los datos encontrados
                 Nombre_Cajero.setText(resultSet.getString("NomCaj"));
                 Apellido_Cajero.setText(resultSet.getString("ApeCaj"));
+                Direccion_Cajero.setText(resultSet.getString("DirCaj"));
                 Correo_Cajero.setText(resultSet.getString("CorCaj"));
                 Telefono_Cajero.setText(resultSet.getString("TelCaj"));
-                Direccion_Cajero.setText(resultSet.getString("DirCaj"));
+                Usuario_Cajero.setText(resultSet.getString("UsuCaj"));
                 Password_Cajero.setText(resultSet.getString("ConCaj"));
             } else {
-                // Si no se encontró ningún resultado, puedes mostrar un mensaje de error o realizar otra acción
-                // Puedes usar una etiqueta de texto para mostrar el mensaje de error, por ejemplo:
-                // mensajeError.setText("No se encontró el cajero con el ID o usuario especificado.");
-                mostrarMensajeAdvertencia("Error", "No se encontró el cajero con el ID o usuario especificado.");
-
+                mostrarMensajeAdvertencia("Cajero no encontrado", "No se encontró ningún cajero con los datos especificados.");
             }
-            // Cierra los recursos de la consulta
-            resultSet.close();
-            preparedStatement.close();
+            mostrarMensajeAdvertencia("Validación Correcta", "El cajero ha sido encontrado");
+
+        } catch (NumberFormatException e) {
+            mostrarMensajeAdvertencia("Formato incorrecto", "El ID del cajero debe ser un número.");
         } catch (SQLException e) {
+            mostrarMensajeAdvertencia("Error", "No se pudo buscar el cajero.");
             e.printStackTrace();
-            // Maneja las excepciones de SQL aquí
         }
     }
 
