@@ -17,6 +17,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.cell.PropertyValueFactory;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -141,7 +142,8 @@ public class ControladorInfoAdmin {
         stage.show();
 
     }
-    private void Cerrar_Sesion()throws IOException{
+
+    private void Cerrar_Sesion() throws IOException {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_Home.fxml"));
             Parent root = loader.load();
@@ -166,37 +168,7 @@ public class ControladorInfoAdmin {
         }
     }
 
-    //Mecanismo CRUD Cajeros
-    @FXML
-    private TableView<M_Crud_Cajero> tablaUsuarios;
-    @FXML
-    private TableColumn<M_Crud_Cajero, Integer> columnaID;
-    @FXML
-    private TableColumn<M_Crud_Cajero, String> columnaNombres;
-    @FXML
-    private TableColumn<M_Crud_Cajero, String> columnaApellidos;
-    @FXML
-    private TableColumn<M_Crud_Cajero, String> columnaDireccion;
-    @FXML
-    private TableColumn<M_Crud_Cajero, String> columnaCorreo;
-    @FXML
-    private TableColumn<M_Crud_Cajero, String> columnaContacto;
-    @FXML
-    private TableColumn<M_Crud_Cajero, String> columnaUsuario;
-    @FXML
-    private TableColumn<M_Crud_Cajero, String> columnaContraseña;
 
-    private ObservableList<M_Crud_Cajero> listaCajeros = FXCollections.observableArrayList();
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        // Configura las columnas
-        columnaID.setCellValueFactory(cellData -> cellData.getValue().idProperty().asObject());
-        columnaNombres.setCellValueFactory(cellData -> cellData.getValue().nombresProperty());
-        columnaApellidos.setCellValueFactory(cellData -> cellData.getValue().apellidosProperty());
-        // Configura las demás columnas de manera similar
 
-        // Asigna los datos a la TableView
-        tablaUsuarios.setItems(listaCajeros);
-    }
 
 }

@@ -100,8 +100,8 @@
             <Label fx:id="Telefono_gestion_cajero" layoutX="216.0" layoutY="145.0" text="Telefono:" textFill="#e7e5e5" />
             <Label fx:id="Usuario_gestion_cajero" layoutX="408.0" layoutY="81.0" text="Usuario" textFill="#e7e5e5" />
             <Label fx:id="Contrasena_gestion_cajero" layoutX="18.0" layoutY="203.0" text="Contraseña:" textFill="#e7e5e5" />
-            <TextField fx:id="Id_insertar_gestion_cajero" layoutX="15.0" layoutY="41.0" prefHeight="25.0" prefWidth="46.0" />
-            <Button fx:id="Buscar_gestion_cajero" layoutX="35.0" layoutY="280.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Buscar" />
+            <TextField fx:id="Id_Cajero" layoutX="15.0" layoutY="41.0" prefHeight="25.0" prefWidth="46.0" />
+            <Button layoutX="35.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnBuscarCajero" prefHeight="31.0" prefWidth="91.0" text="Buscar" />
             <TableView layoutX="9.0" layoutY="324.0" prefHeight="166.0" prefWidth="616.0">
               <columns>
                 <TableColumn prefWidth="75.0" text="ID" />
@@ -114,18 +114,19 @@
                   <TableColumn prefWidth="90.0" text="Contraseña" />
               </columns>
             </TableView>
-            <TextField fx:id="Id_insertar_gestion_cajero1" layoutX="18.0" layoutY="166.0" />
-            <TextField fx:id="Id_insertar_gestion_cajero2" layoutX="18.0" layoutY="102.0" />
-            <TextField fx:id="Id_insertar_gestion_cajero3" layoutX="219.0" layoutY="102.0" />
-            <TextField fx:id="Id_insertar_gestion_cajero11" layoutX="408.0" layoutY="98.0" />
-            <TextField fx:id="Id_insertar_gestion_cajero12" layoutX="219.0" layoutY="166.0" />
-            <TextField fx:id="Id_insertar_gestion_cajero13" layoutX="408.0" layoutY="166.0" />
-            <TextField fx:id="Id_insertar_gestion_cajero14" layoutX="18.0" layoutY="220.0" />
-            <Button fx:id="Buscar_gestion_cajero2" layoutX="340.0" layoutY="499.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Seleccionar" />
-            <Button fx:id="Buscar_gestion_cajero3" layoutX="171.0" layoutY="499.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Listar" />
-            <Button fx:id="Buscar_gestion_cajero4" layoutX="494.0" layoutY="280.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Actualizar" />
-            <Button fx:id="Buscar_gestion_cajero5" layoutX="194.0" layoutY="280.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Agregar" />
-            <Button fx:id="Buscar_gestion_cajero6" layoutX="341.0" layoutY="280.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Eliminar" />
+            <TextField fx:id="Correo_Cajero" layoutX="18.0" layoutY="166.0" />
+            <TextField fx:id="Nombre_Cajero" layoutX="18.0" layoutY="102.0" />
+            <TextField fx:id="Apellido_Cajero" layoutX="219.0" layoutY="102.0" />
+            <TextField fx:id="Usuario_Cajero" layoutX="408.0" layoutY="98.0" />
+            <TextField fx:id="Telefono_Cajero" layoutX="219.0" layoutY="166.0" />
+            <TextField fx:id="Direccion_Cajero" layoutX="408.0" layoutY="166.0" />
+            <TextField fx:id="Password_Cajero" layoutX="18.0" layoutY="220.0" />
+            <Button layoutX="269.0" layoutY="504.0" mnemonicParsing="false" onAction="#btnSeleccionarCajeroEnTabla" prefHeight="31.0" prefWidth="91.0" text="Seleccionar" />
+            <Button fx:id="Buscar_gestion_cajero4" layoutX="494.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnActualizarCajero" prefHeight="31.0" prefWidth="91.0" text="Actualizar" />
+            <Button layoutX="194.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnAgregarCajero" prefHeight="31.0" prefWidth="91.0" text="Agregar" />
+            <Button layoutX="341.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnEliminarCajero" prefHeight="31.0" prefWidth="91.0" text="Eliminar" />
+            <Button layoutX="125.0" layoutY="503.0" mnemonicParsing="false" onAction="#btnPonerEnListaTodosLosCajeros" prefHeight="31.0" prefWidth="91.0" text="Listar" />
+            <Button layoutX="423.0" layoutY="503.0" mnemonicParsing="false" onAction="#btnLimpiarCampos" prefHeight="31.0" prefWidth="109.0" text="Limpiar campos" />
             </children>
         </Pane>
          <Pane layoutX="673.0" prefHeight="42.0" prefWidth="200.0">
