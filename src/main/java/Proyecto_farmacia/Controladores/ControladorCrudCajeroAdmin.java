@@ -50,6 +50,13 @@ public class ControladorCrudCajeroAdmin {
                 throw new RuntimeException(e);
             }
         });
+        BotonIngresoMercaderia.setOnAction(event -> {
+            try {
+                Pantlla_Agregar_Mercaderia();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
         BotonCerrarSesion.setOnAction(event -> {
             try {
                 Cerrar_Sesion();
@@ -66,6 +73,31 @@ public class ControladorCrudCajeroAdmin {
             stage.setIconified(true);
         });
 
+    }
+
+    private void Pantlla_Agregar_Mercaderia() throws IOException {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_Crud_Productos.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.initStyle(StageStyle.UNDECORATED);
+
+            Stage currentStage = (Stage) BotonIngresoMercaderia.getScene().getWindow();
+            currentStage.close();
+
+            root.setOnMousePressed(event -> {
+                x = event.getSceneX();
+                y = event.getSceneY();
+            });
+            root.setOnMouseDragged(event -> {
+                stage.setX(event.getScreenX() - x);
+                stage.setY(event.getScreenY() - y);
+            });
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void Pantalla_Info_admin() throws IOException {
@@ -154,6 +186,7 @@ public class ControladorCrudCajeroAdmin {
 
     //Acciones Botones
     private ObservableList<M_Crud_Cajero> cajeros = FXCollections.observableArrayList();
+
     @FXML
     private void btnBuscarCajero() {
         String idCajeroStr = Id_Cajero.getText();
@@ -192,7 +225,7 @@ public class ControladorCrudCajeroAdmin {
                 Telefono_Cajero.setText(resultSet.getString("TelCaj"));
                 Usuario_Cajero.setText(resultSet.getString("UsuCaj"));
                 Password_Cajero.setText(resultSet.getString("ConCaj"));
-            // Se crea un objeto M_Crud_Cajero con los datos del cajero encontrado
+                // Se crea un objeto M_Crud_Cajero con los datos del cajero encontrado
                 M_Crud_Cajero cajeroEncontrado = new M_Crud_Cajero(
                         resultSet.getInt("idCaj"),
                         resultSet.getString("NomCaj"),

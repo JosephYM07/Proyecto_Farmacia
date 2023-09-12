@@ -1,5 +1,6 @@
 package Proyecto_farmacia.Controladores;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -7,14 +8,15 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+
 import java.io.IOException;
 
-public class ControladorInfoAdmin {
+public class ControladorProductos {
     private double x, y;
     @FXML
-    private Button BotonAgregarCajero;
+    private Button BotonInicio;
     @FXML
-    private Button BotonIngresoMercaderia;
+    private Button BotonAgregarCajero;
     @FXML
     private Button BotonRevisionFacturas;
     @FXML
@@ -26,18 +28,23 @@ public class ControladorInfoAdmin {
 
     @FXML
     private void HClicks() {
-        BotonAgregarCajero.setOnAction(event -> Pantalla_Agregar_Cajero());
-        BotonIngresoMercaderia.setOnAction(event -> {
+        BotonInicio.setOnAction(event -> {
             try {
-                Pantlla_Agregar_Mercaderia();
+                Pantalla_Info_admin();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         });
-
         BotonCerrarSesion.setOnAction(event -> {
             try {
                 Cerrar_Sesion();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
+        BotonAgregarCajero.setOnAction(event -> {
+            try {
+                Pantalla_agregar_cajero();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -50,17 +57,19 @@ public class ControladorInfoAdmin {
             Stage stage = (Stage) BotonMinimizarApp.getScene().getWindow();
             stage.setIconified(true);
         });
+
     }
 
-    //Este sirve para mostrar la ventana
-    private void Pantalla_Agregar_Cajero() {
+    private void Pantalla_agregar_cajero() throws IOException {
+
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_Crud_Cajero_Admin.fxml"));
             Parent root = loader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.initStyle(StageStyle.UNDECORATED);
-            Stage currentStage = (Stage) BotonAgregarCajero.getScene().getWindow();
+
+            Stage currentStage = (Stage) BotonInicio.getScene().getWindow();
             currentStage.close();
 
             root.setOnMousePressed(event -> {
@@ -77,15 +86,16 @@ public class ControladorInfoAdmin {
         }
     }
 
-    private void Pantlla_Agregar_Mercaderia() throws IOException {
+    private void Pantalla_Info_admin() throws IOException {
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_Crud_Productos.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_Info_admin.fxml"));
             Parent root = loader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.initStyle(StageStyle.UNDECORATED);
-            Stage currentStage = (Stage) BotonIngresoMercaderia.getScene().getWindow();
+
+            Stage currentStage = (Stage) BotonInicio.getScene().getWindow();
             currentStage.close();
 
             root.setOnMousePressed(event -> {
@@ -100,26 +110,6 @@ public class ControladorInfoAdmin {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    private void Pantalla_Revisar_Ventas() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_login_admin.fxml"));
-        Parent root = loader.load();
-        Stage stage = new Stage();
-        stage.setScene(new Scene(root));
-        stage.initStyle(StageStyle.UNDECORATED);
-        Stage currentStage = (Stage) BotonRevisionFacturas.getScene().getWindow();
-        currentStage.close();
-        root.setOnMousePressed(event -> {
-            x = event.getSceneX();
-            y = event.getSceneY();
-        });
-        root.setOnMouseDragged(event -> {
-            stage.setX(event.getScreenX() - x);
-            stage.setY(event.getScreenY() - y);
-        });
-        stage.show();
-
     }
 
     private void Cerrar_Sesion() throws IOException {
@@ -147,7 +137,24 @@ public class ControladorInfoAdmin {
         }
     }
 
+    public void btnBuscarCajero(ActionEvent actionEvent) {
+    }
 
+    public void btnSeleccionarCajeroEnTabla(ActionEvent actionEvent) {
+    }
 
+    public void btnAgregarCajero(ActionEvent actionEvent) {
+    }
 
+    public void btnEliminarCajero(ActionEvent actionEvent) {
+    }
+
+    public void btnPonerEnListaTodosLosCajeros(ActionEvent actionEvent) {
+    }
+
+    public void btnLimpiarCampos(ActionEvent actionEvent) {
+    }
+
+    public void btnActualizarCajero(ActionEvent actionEvent) {
+    }
 }
