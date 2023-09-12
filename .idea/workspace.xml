@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79a344de-7be1-4787-be88-c7d46a7f2408" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Pantalla_login_cajero.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Pantalla_login_cajero.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/images/Cajero.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/images/Cajero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/M_Fact_Cajero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Query-Farmarcia.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Query-Farmarcia.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorFactCajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorFactCajero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Pantalla_Fac_Cajero.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Pantalla_Fac_Cajero.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,20 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Alejandro-Moreira&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f7e099b8-8222-49b3-bcd2-0a9830f6bee9" />
+        <option name="url" value="https://github.com/JosephYM07/Proyecto_Farmacia.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,11 +65,14 @@
     "git-widget-placeholder": "Merging main",
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "C:/Users/Alejandro/Desktop/Farmacia Proyecto/Proyecto_Farmacia/src/main/java/farmacia/proyecto_farmacia",
-    "last_opened_file_path": "C:/Users/Alejandro/Desktop/Farmacia Proyecto/Proyecto_Farmacia",
+    "last_opened_file_path": "C:/Users/Alejandro/Downloads/mysql-connector-j-8.0.33",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -138,6 +158,10 @@
       <workItem from="1694150566285" duration="788000" />
       <workItem from="1694400812432" duration="1147000" />
       <workItem from="1694402176157" duration="1418000" />
+      <workItem from="1694413429250" duration="47000" />
+      <workItem from="1694413668070" duration="58000" />
+      <workItem from="1694458283997" duration="89000" />
+      <workItem from="1694458384042" duration="13262000" />
     </task>
     <servers />
   </component>
