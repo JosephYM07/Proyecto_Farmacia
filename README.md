@@ -35,6 +35,6 @@ Generación de factura de cliente en formato PDF.
 
 # Conclusiones
 
-*Interfaz de Usuario Amigable: Una de las conclusiones clave es que la interfaz de usuario debe ser intuitiva y fácil de usar para el personal de la farmacia. Esto implica la necesidad de diseñar una interfaz amigable que permita a los empleados realizar tareas como la gestión de inventario, la atención al cliente y la venta de productos de manera eficiente.
+* Interfaz de Usuario Amigable: Una de las conclusiones clave es que la interfaz de usuario debe ser intuitiva y fácil de usar para el personal de la farmacia. Esto implica la necesidad de diseñar una interfaz amigable que permita a los empleados realizar tareas como la gestión de inventario, la atención al cliente y la venta de productos de manera eficiente.
 
-*Seguridad y Privacidad de Datos: Otra conclusión importante es que se debe garantizar la seguridad y privacidad de los datos de los pacientes y la información financiera. Esto implica implementar medidas de seguridad robustas, como la encriptación de datos y el acceso controlado al sistema, para proteger la información sensible.
+* Seguridad y Privacidad de Datos: Otra conclusión importante es que se debe garantizar la seguridad y privacidad de los datos de los pacientes y la información financiera. Esto implica implementar medidas de seguridad robustas, como la encriptación de datos y el acceso controlado al sistema, para proteger la información sensible.
