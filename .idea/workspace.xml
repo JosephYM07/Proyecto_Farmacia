@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79a344de-7be1-4787-be88-c7d46a7f2408" name="Changes" comment="">
+    <list default="true" id="79a344de-7be1-4787-be88-c7d46a7f2408" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorFactCajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorFactCajero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/M_Fact_Cajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/M_Fact_Cajero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +138,15 @@
       <workItem from="1694400812432" duration="1147000" />
       <workItem from="1694402176157" duration="1418000" />
     </task>
+    <task id="LOCAL-00001" summary="Update">
+      <option name="closed" value="true" />
+      <created>1694510094389</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694510094389</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +166,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Factura" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/Proyecto_farmacia/Controladores/ControladorFactCajero.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/Proyecto_farmacia/Controladores/ControladorFactCajero.java" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>
