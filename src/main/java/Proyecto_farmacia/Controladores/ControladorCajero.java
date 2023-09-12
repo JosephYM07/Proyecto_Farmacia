@@ -152,7 +152,7 @@ public class ControladorCajero {
     private void cargarCajerosDesdeBD() {
         String URL = "jdbc:mysql://localhost:3306/farmacia";
         String USUARIO = "root";
-        String CONTRASENA = "Vodafone2002.";
+        String CONTRASENA = "SoaD1725.";
 
         try (Connection conexion = DriverManager.getConnection(URL, USUARIO, CONTRASENA)) {
             String consulta = "SELECT UsuCaj, ConCaj FROM cajeros";

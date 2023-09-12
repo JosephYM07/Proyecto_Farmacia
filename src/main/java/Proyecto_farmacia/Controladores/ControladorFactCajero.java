@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.sql.*;
 
 public class ControladorFactCajero {
-    private double x, y;
+   /* private double x, y;
 
     @FXML
     private Button Overview;
@@ -330,5 +330,5 @@ public class ControladorFactCajero {
         alert.setTitle(titulo);
         alert.setContentText(mensaje);
         alert.showAndWait();
-    }
+    }*/
 }
