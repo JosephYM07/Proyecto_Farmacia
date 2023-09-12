@@ -44,6 +44,8 @@ public class M_Fact_Cajero {
         Iva = iva;
         Total_Fac = total_Fac;
     }
+    public M_Fact_Cajero(String nomProd, String stoProd, String valVentProd) {
+    }
 
     public int getId_Cajero() {
         return Id_Cajero;
