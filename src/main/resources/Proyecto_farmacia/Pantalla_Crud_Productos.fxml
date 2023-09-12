@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
@@ -94,39 +95,37 @@
                 <Label layoutX="244.0" layoutY="4.0" prefHeight="21.0" prefWidth="216.0" text="GESTION DE PRODUCTOS" textFill="#e7e5e5" />
                 <Label fx:id="Id_gestion_cajero" layoutX="15.0" layoutY="16.0" prefHeight="21.0" prefWidth="55.0" text="ID:" textFill="#e7e5e5" />
                 <Label fx:id="Nombre_gestion_cajero" alignment="CENTER" layoutX="19.0" layoutY="79.0" text="Nombre:" textFill="#e7e5e5" />
-            <Label fx:id="Apellido_gestion_cajero" layoutX="218.0" layoutY="79.0" text="Apellido" textFill="#e7e5e5" />
-            <Label fx:id="Direccion_gestion_cajero" layoutX="408.0" layoutY="145.0" text="Dirección:" textFill="#e7e5e5" />
-            <Label fx:id="Correo_gestion_cajero" layoutX="19.0" layoutY="145.0" text="Correo:" textFill="#e7e5e5" />
-            <Label fx:id="Telefono_gestion_cajero" layoutX="216.0" layoutY="145.0" text="Telefono:" textFill="#e7e5e5" />
-            <Label fx:id="Usuario_gestion_cajero" layoutX="408.0" layoutY="81.0" text="Usuario" textFill="#e7e5e5" />
-            <Label fx:id="Contrasena_gestion_cajero" layoutX="18.0" layoutY="203.0" text="Contraseña:" textFill="#e7e5e5" />
-            <TextField fx:id="Id_Cajero" layoutX="15.0" layoutY="41.0" prefHeight="25.0" prefWidth="46.0" />
-            <Button layoutX="35.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnBuscarCajero" prefHeight="31.0" prefWidth="91.0" text="Buscar" />
-            <TableView fx:id="tablaCajeros" layoutX="9.0" layoutY="324.0" prefHeight="166.0" prefWidth="616.0">
+            <Label fx:id="Apellido_gestion_cajero" layoutX="218.0" layoutY="79.0" text="Descripción" textFill="#e7e5e5" />
+            <Label fx:id="Direccion_gestion_cajero" layoutX="474.0" layoutY="145.0" text="Iva" textFill="#e7e5e5" />
+            <Label fx:id="Correo_gestion_cajero" layoutX="19.0" layoutY="145.0" text="Valor Venta" textFill="#e7e5e5" />
+            <Label fx:id="Telefono_gestion_cajero" layoutX="216.0" layoutY="145.0" text="Proveedor" textFill="#e7e5e5" />
+            <Label fx:id="Usuario_gestion_cajero" layoutX="408.0" layoutY="81.0" text="Stock" textFill="#e7e5e5" />
+            <TextField fx:id="Id_producto" layoutX="15.0" layoutY="41.0" prefHeight="25.0" prefWidth="46.0" />
+            <Button layoutX="35.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnBuscarProducto" prefHeight="31.0" prefWidth="91.0" text="Buscar" />
+            <TableView fx:id="tablaProductos" layoutX="9.0" layoutY="324.0" prefHeight="166.0" prefWidth="616.0">
               <columns>
-                <TableColumn fx:id="colIdCajero" prefWidth="75.0" text="ID" />
-                <TableColumn fx:id="colNombres" prefWidth="75.0" text="Nombres" />
-                  <TableColumn fx:id="colApellidos" prefWidth="75.0" text="Apellidos" />
-                  <TableColumn fx:id="colDireccion" prefWidth="75.0" text="Dirección" />
-                  <TableColumn fx:id="colCorreo" prefWidth="75.0" text="Correo" />
-                  <TableColumn fx:id="colContacto" prefWidth="75.0" text="Contacto" />
-                  <TableColumn fx:id="colUsuario" prefWidth="75.0" text="Usuario" />
-                  <TableColumn fx:id="colContraseña" prefWidth="90.0" text="Contraseña" />
+                <TableColumn fx:id="colIdProducto" prefWidth="66.66667175292969" text="CodProducto" />
+                <TableColumn fx:id="colNombreProducto" prefWidth="84.0" text="Nombre" />
+                  <TableColumn fx:id="colDescripcionProducto" prefWidth="229.33334350585938" text="Descripcion" />
+                  <TableColumn fx:id="colStock" minWidth="0.0" prefWidth="44.66668701171875" text="Stock" />
+                  <TableColumn fx:id="colPrecioProducto" prefWidth="50.6666259765625" text="\$$" />
+                  <TableColumn fx:id="colIvaProducto" prefWidth="40.00006103515625" text="Iva" />
+                  <TableColumn fx:id="colProveedorProducto" prefWidth="100.66668701171875" text="Ruc Proveedor" />
               </columns>
             </TableView>
-            <TextField fx:id="Correo_Cajero" layoutX="18.0" layoutY="166.0" />
-            <TextField fx:id="Nombre_Cajero" layoutX="18.0" layoutY="102.0" />
-            <TextField fx:id="Apellido_Cajero" layoutX="219.0" layoutY="102.0" />
-            <TextField fx:id="Usuario_Cajero" layoutX="408.0" layoutY="98.0" />
-            <TextField fx:id="Telefono_Cajero" layoutX="219.0" layoutY="166.0" />
-            <TextField fx:id="Direccion_Cajero" layoutX="408.0" layoutY="166.0" />
-            <TextField fx:id="Password_Cajero" layoutX="18.0" layoutY="220.0" />
-            <Button layoutX="269.0" layoutY="504.0" mnemonicParsing="false" onAction="#btnSeleccionarCajeroEnTabla" prefHeight="31.0" prefWidth="91.0" text="Seleccionar" />
-            <Button fx:id="Buscar_gestion_cajero4" layoutX="494.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnActualizarCajero" prefHeight="31.0" prefWidth="91.0" text="Actualizar" />
-            <Button layoutX="194.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnAgregarCajero" prefHeight="31.0" prefWidth="91.0" text="Agregar" />
-            <Button layoutX="341.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnEliminarCajero" prefHeight="31.0" prefWidth="91.0" text="Eliminar" />
-            <Button fx:id="BotonCargarDatos" layoutX="125.0" layoutY="503.0" mnemonicParsing="false" onAction="#btnPonerEnListaTodosLosCajeros" prefHeight="31.0" prefWidth="91.0" text="Listar" />
+            <TextField fx:id="Valor_Venta_Prodcuto" layoutX="18.0" layoutY="166.0" />
+            <TextField fx:id="Nombre_Producto" layoutX="18.0" layoutY="102.0" />
+            <TextField fx:id="Descripcion_Producto" layoutX="219.0" layoutY="102.0" />
+            <TextField fx:id="Stock_Producto" layoutX="408.0" layoutY="98.0" />
+            <TextField fx:id="Proveedor_Producto" layoutX="219.0" layoutY="166.0" />
+            <Button layoutX="269.0" layoutY="504.0" mnemonicParsing="false" onAction="#btnSeleccionarProductosEnTabla" prefHeight="31.0" prefWidth="91.0" text="Seleccionar" />
+            <Button fx:id="Buscar_gestion_producto" layoutX="494.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnActualizarProducto" prefHeight="31.0" prefWidth="91.0" text="Actualizar" />
+            <Button layoutX="194.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnAgregarProducto" prefHeight="31.0" prefWidth="91.0" text="Agregar" />
+            <Button layoutX="341.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnEliminarProducto" prefHeight="31.0" prefWidth="91.0" text="Eliminar" />
+            <Button fx:id="BotonCargarDatos" layoutX="125.0" layoutY="503.0" mnemonicParsing="false" onAction="#btnPonerEnListaTodosLosProductos" prefHeight="31.0" prefWidth="91.0" text="Listar" />
             <Button layoutX="423.0" layoutY="503.0" mnemonicParsing="false" onAction="#btnLimpiarCampos" prefHeight="31.0" prefWidth="109.0" text="Limpiar campos" />
+            <RadioButton fx:id="Iva_Si" layoutX="417.0" layoutY="170.0" mnemonicParsing="false" text="Si" textFill="WHITE" />
+            <RadioButton fx:id="Iva_No" layoutX="513.0" layoutY="170.0" mnemonicParsing="false" text="No" textFill="WHITE" />
             </children>
         </Pane>
          <Pane layoutX="673.0" prefHeight="42.0" prefWidth="200.0">
