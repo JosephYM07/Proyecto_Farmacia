@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="884.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto_farmacia.Controladores.ControladorProductos">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutY="161.0" prefHeight="574.0" prefWidth="228.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane prefHeight="173.0" prefWidth="228.0">
+                    <children>
+                        <ImageView fitHeight="166.0" fitWidth="173.0" layoutX="28.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/logo_farmacia.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Button fx:id="BotonInicio" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#HClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Inicio" textFill="#e7e5e5">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/icons8_Home_32px.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="BotonAgregarCajero" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#HClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Agregar Cajero" textFill="#e7e5e5">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/shopping-store.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="BotonRevisionFacturas" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#HClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Revisar Ventas" textFill="#e7e5e5">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/factura.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="BotonCerrarSesion" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#HClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@Styles/style.css" text="Cerrar Sesión">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/icons8_Sign_Out_32px.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+            </children>
+        </VBox>
+        <Pane layoutX="447.0" layoutY="8.0" prefHeight="42.0" prefWidth="200.0" />
+        <Pane layoutX="244.0" layoutY="35.0" prefHeight="519.0" prefWidth="629.0" styleClass="panel_bordes" stylesheets="@Styles/style_info_admin.css">
+            <children>
+                <Label layoutX="244.0" layoutY="4.0" prefHeight="21.0" prefWidth="216.0" text="GESTION DE PRODUCTOS" textFill="#e7e5e5" />
+                <Label fx:id="Id_gestion_cajero" layoutX="15.0" layoutY="16.0" prefHeight="21.0" prefWidth="55.0" text="ID:" textFill="#e7e5e5" />
+                <Label fx:id="Nombre_gestion_cajero" alignment="CENTER" layoutX="19.0" layoutY="79.0" text="Nombre:" textFill="#e7e5e5" />
+            <Label fx:id="Apellido_gestion_cajero" layoutX="218.0" layoutY="79.0" text="Descripción" textFill="#e7e5e5" />
+            <Label fx:id="Direccion_gestion_cajero" layoutX="474.0" layoutY="145.0" text="Iva" textFill="#e7e5e5" />
+            <Label fx:id="Correo_gestion_cajero" layoutX="19.0" layoutY="145.0" text="Valor Venta" textFill="#e7e5e5" />
+            <Label fx:id="Telefono_gestion_cajero" layoutX="216.0" layoutY="145.0" text="Proveedor" textFill="#e7e5e5" />
+            <Label fx:id="Usuario_gestion_cajero" layoutX="408.0" layoutY="81.0" text="Stock" textFill="#e7e5e5" />
+            <TextField fx:id="Id_producto" layoutX="15.0" layoutY="41.0" prefHeight="25.0" prefWidth="46.0" />
+            <Button layoutX="35.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnBuscarProducto" prefHeight="31.0" prefWidth="91.0" text="Buscar" />
+            <TableView fx:id="tablaProductos" layoutX="9.0" layoutY="324.0" prefHeight="166.0" prefWidth="616.0">
+              <columns>
+                <TableColumn fx:id="colIdProducto" prefWidth="66.66667175292969" text="CodProducto" />
+                <TableColumn fx:id="colNombreProducto" prefWidth="84.0" text="Nombre" />
+                  <TableColumn fx:id="colDescripcionProducto" prefWidth="229.33334350585938" text="Descripcion" />
+                  <TableColumn fx:id="colStock" minWidth="0.0" prefWidth="44.66668701171875" text="Stock" />
+                  <TableColumn fx:id="colPrecioProducto" prefWidth="50.6666259765625" text="\$$" />
+                  <TableColumn fx:id="colIvaProducto" prefWidth="40.00006103515625" text="Iva" />
+                  <TableColumn fx:id="colProveedorProducto" prefWidth="100.66668701171875" text="Ruc Proveedor" />
+              </columns>
+            </TableView>
+            <TextField fx:id="Valor_Venta_Prodcuto" layoutX="18.0" layoutY="166.0" />
+            <TextField fx:id="Nombre_Producto" layoutX="18.0" layoutY="102.0" />
+            <TextField fx:id="Descripcion_Producto" layoutX="219.0" layoutY="102.0" />
+            <TextField fx:id="Stock_Producto" layoutX="408.0" layoutY="98.0" />
+            <TextField fx:id="Proveedor_Producto" layoutX="219.0" layoutY="166.0" />
+            <Button layoutX="269.0" layoutY="504.0" mnemonicParsing="false" onAction="#btnSeleccionarProductosEnTabla" prefHeight="31.0" prefWidth="91.0" text="Seleccionar" />
+            <Button fx:id="Buscar_gestion_producto" layoutX="494.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnActualizarProducto" prefHeight="31.0" prefWidth="91.0" text="Actualizar" />
+            <Button layoutX="194.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnAgregarProducto" prefHeight="31.0" prefWidth="91.0" text="Agregar" />
+            <Button layoutX="341.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnEliminarProducto" prefHeight="31.0" prefWidth="91.0" text="Eliminar" />
+            <Button fx:id="BotonCargarDatos" layoutX="125.0" layoutY="503.0" mnemonicParsing="false" onAction="#btnPonerEnListaTodosLosProductos" prefHeight="31.0" prefWidth="91.0" text="Listar" />
+            <Button layoutX="423.0" layoutY="503.0" mnemonicParsing="false" onAction="#btnLimpiarCampos" prefHeight="31.0" prefWidth="109.0" text="Limpiar campos" />
+            <RadioButton fx:id="Iva_Si" layoutX="417.0" layoutY="170.0" mnemonicParsing="false" text="Si" textFill="WHITE" />
+            <RadioButton fx:id="Iva_No" layoutX="513.0" layoutY="170.0" mnemonicParsing="false" text="No" textFill="WHITE" />
+            </children>
+        </Pane>
+         <Pane layoutX="673.0" prefHeight="42.0" prefWidth="200.0">
+             <children>
+                 <Button fx:id="BotonCerrarApp" layoutX="162.0" layoutY="13.0" mnemonicParsing="false" onAction="#HClicks" styleClass="circle-button" stylesheets="@Styles/style.css" textFill="#fa4878" />
+                 <Button fx:id="BotonMinimizarApp" layoutX="130.0" layoutY="13.0" mnemonicParsing="false" onAction="#HClicks" styleClass="circle-button2" stylesheets="@Styles/style.css" />
+             </children>
+         </Pane>
+    </children>
+    <effect>
+        <DropShadow color="#1b1eeb" />
+    </effect>
+</AnchorPane>

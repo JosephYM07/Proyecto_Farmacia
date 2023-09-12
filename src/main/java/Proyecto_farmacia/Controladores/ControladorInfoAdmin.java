@@ -34,13 +34,7 @@ public class ControladorInfoAdmin {
                 throw new RuntimeException(e);
             }
         });
-        BotonRevisionFacturas.setOnAction(event -> {
-            try {
-                Pantalla_Revisar_Ventas();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        });
+
         BotonCerrarSesion.setOnAction(event -> {
             try {
                 Cerrar_Sesion();
@@ -86,7 +80,7 @@ public class ControladorInfoAdmin {
     private void Pantlla_Agregar_Mercaderia() throws IOException {
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_login_cajero.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Proyecto_farmacia/Pantalla_Crud_Productos.fxml"));
             Parent root = loader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
