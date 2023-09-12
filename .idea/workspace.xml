@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79a344de-7be1-4787-be88-c7d46a7f2408" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/Modulos/M_Fact_Cajero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Query-Farmarcia.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Query-Farmarcia.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorFactCajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto_farmacia/Controladores/ControladorFactCajero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Pantalla_Fac_Cajero.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto_farmacia/Pantalla_Fac_Cajero.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,20 +24,6 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Alejandro-Moreira&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="f7e099b8-8222-49b3-bcd2-0a9830f6bee9" />
-        <option name="url" value="https://github.com/JosephYM07/Proyecto_Farmacia.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -57,25 +39,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_directory_selection": "C:/Users/Alejandro/Desktop/Farmacia Proyecto/Proyecto_Farmacia/src/main/java/farmacia/proyecto_farmacia",
-    "last_opened_file_path": "C:/Users/Alejandro/Downloads/mysql-connector-j-8.0.33",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Alejandro/Desktop/Farmacia Proyecto/Proyecto_Farmacia/src/main/java/farmacia/proyecto_farmacia&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alejandro/Desktop/Farmacia Proyecto/Proyecto_Farmacia&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="farmacia.proyecto_farmacia.HelloApplication" />
@@ -158,14 +137,26 @@
       <workItem from="1694150566285" duration="788000" />
       <workItem from="1694400812432" duration="1147000" />
       <workItem from="1694402176157" duration="1418000" />
-      <workItem from="1694413429250" duration="47000" />
-      <workItem from="1694413668070" duration="58000" />
-      <workItem from="1694458283997" duration="89000" />
-      <workItem from="1694458384042" duration="13262000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Factura" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/Proyecto_farmacia/Controladores/ControladorFactCajero.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/Proyecto_farmacia/Controladores/ControladorFactCajero.java" />
   </component>
 </project>
