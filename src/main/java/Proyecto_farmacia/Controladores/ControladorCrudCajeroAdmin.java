@@ -177,7 +177,7 @@ public class ControladorCrudCajeroAdmin {
         try {
             String url = "jdbc:mysql://localhost:3306/farmacia";
             String usuario = "root";
-            String contraseña = "SoaD1725.";
+            String contraseña = "Vodafone2002.";
             connection = DriverManager.getConnection(url, usuario, contraseña);
         } catch (SQLException e) {
             e.printStackTrace();
